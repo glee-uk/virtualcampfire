@@ -11,6 +11,6 @@ Run
 
 
 ```
-php jukebox.php > jukebox.html
+php jukebox.php > index.html
 ```
 
