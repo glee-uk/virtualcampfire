@@ -9,7 +9,8 @@ Checkout, add any new mp3 files.
 
 Run 
 
-'''
+
+```
 php jukebox.php > jukebox.html
-'''
+```
 
