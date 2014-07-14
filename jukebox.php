@@ -38,7 +38,7 @@ function choose(elementName) {
 <h1 align='center'>Virtual Campfire</h1>
 
 <table id="songlist" class="sortable">
-<tr><th>Song</th><th class="download">mp3</th><th class="date">Date</th><th class="filesize">Size (MB)</th></tr>
+<tr><th>Song</th><th class="download">mp3</th><th class="filesize">Size (MB)</th></tr>
 <?php	
 	$handle = opendir(".");
 
