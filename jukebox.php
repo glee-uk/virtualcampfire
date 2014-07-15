@@ -39,9 +39,17 @@ function choose(url) {
 <li>Click on song titles to play them</li>
 <li>Click on headings to sort the list</li>
 <li>Email <a href="mailto:fergus@virtualcampfire.co.uk">Fergus</a> to contribute songs or feedback</li>
+<li>
+Or make a <a href="https://github.com/timp/virtualccampfire">pull request</a>
+</li>
 </ul>
 </div>
-<h1 align='center'>Virtual Campfire</h1>
+<div align='center'>
+<h1>Virtual Campfire</h1>
+<p>
+A place for <a href="http://fsc.org.uk/">Forest School Campers</a> 
+to learn and teach traditional songs online. 
+</p>
 <table id="songlist" class="sortable">
 <tr><th>Song</th><th class="download">mp3</th><th class="filesize">Size (MB)</th></tr>
 <?php	
@@ -78,13 +86,18 @@ foreach($files as $filename) {
 }
 ?>
 </table>
-<p class="para">
-This page was originally put together by <a href="http://leomurray.co.uk">Leo Murray</a> and Jack Freedman. <a href="http://oolong.co.uk">Fergus</a> just took over the development of it in September 2009.
+<p>
+This page was originally put together by <a href="http://leomurray.co.uk">Leo Murray</a> and Jack Freedman. 
 </p>
-
-<p class="para">
+<p>
+<a href="http://oolong.co.uk">Fergus</a> just took over the development of it in September 2009.
+</p>
+<p>
+<a href="http://tim.pizey.net/">Tim</a> updated the site in July 2014.
+</p>
+<p>
 The table-sorting code is thanks to <a href="http://www.kryogenix.org/code/browser/sorttable/">Stuart Langridge</a>.
 </p>
-
+</div>
 </body>
 </html>
