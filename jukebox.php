@@ -16,8 +16,10 @@ function choose(url) {
   if (typeof window.currentAudioElement === 'undefined') { 
     alert('your browser does not like audio.');
   } else {
-    window.currentAudioElement.pause();
-    window.currentAudioElement.currentTime = 0;   
+    if (!window.currentAudioElement.paused) {
+      window.currentAudioElement.pause();
+      window.currentAudioElement.currentTime = 0;   
+    }
     window.currentAudioElement.src = url;
     window.currentAudioElement.play();
   }
