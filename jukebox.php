@@ -11,24 +11,29 @@
 
 <script>
 
-function choose(elementName) { 
+function choose(url) { 
+  window.currentAudioElement = document.getElementById('player');
   if (typeof window.currentAudioElement === 'undefined') { 
+    alert('your browser does not like audio.');
   } else {
     window.currentAudioElement.pause();
     window.currentAudioElement.currentTime = 0;   
+    window.currentAudioElement.src = url;
+    window.currentAudioElement.play();
   }
-  window.currentAudioElement = document.getElementById(elementName);
-  window.currentAudioElement.play();
 }
 
 </script>
 
-
 </head>
 <body>
-
-<div id="logo" style='float:left; '>
-<p style='height:260px'></p>
+<audio 
+  id="player" 
+  type="audio/mpeg"
+  loop >
+</audio>
+<div id="left" style='float:left; width:20%; textalign:left;'>
+<div id="logo"></div>
 <ul class="para">
 <li>Click on song titles to play them</li>
 <li>Click on headings to sort the list</li>
@@ -36,7 +41,6 @@ function choose(elementName) {
 </ul>
 </div>
 <h1 align='center'>Virtual Campfire</h1>
-
 <table id="songlist" class="sortable">
 <tr><th>Song</th><th class="download">mp3</th><th class="filesize">Size (MB)</th></tr>
 <?php	
@@ -61,12 +65,7 @@ foreach($files as $filename) {
 '<tr class="song">
   <td>
    <div class="song">
-    <audio id="'.urlencode($title).'" loop>
-     <source src="'.rawurlencode($filename).'" type="audio/mpeg">
-     <a href="'.rawurlencode($filename).'">'.$title.'</a>
-    </audio>
-
-    <a onclick="choose(\''.urlencode($title).'\')">'.$title.'</a>
+    <a onclick="choose(\''.rawurlencode($filename).'\')">'.$title.'</a>
    </div>
   </td>
   <td class="download">
