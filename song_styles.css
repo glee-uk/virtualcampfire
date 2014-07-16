@@ -1,11 +1,9 @@
-
-/* CSS Document */
 body {
     background-color:#004000;
     color:white;
-    font-family: Tahoma, Arial;
+    font-family: sans-serif;
 }
-#logo{
+#logo {
     background:url(fscfireball.jpg) no-repeat 20px 10px;
     width:200px;
     height:260px;
@@ -13,7 +11,7 @@ body {
     font-size:16px;
     text-align:center;
 }
-a:active, a:link, a:visited{
+a:active, a:link, a:visited {
     color: #E5FFB2;
 
     border: 0px;
@@ -30,10 +28,9 @@ th {
     border-bottom:1px solid green;
 }
 
-.songname{
+.songname {
     margin: 5px;
     color: #FFFFFF; 
-    font-size:12px;
 }
 .songname a {
     background:transparent url(playbutton.png) no-repeat scroll left center;
@@ -53,14 +50,8 @@ th {
 }
 .download {
     border-left:1px dotted green;
-    font-size:0.75em;
-}
-.date {
-    font-size:0.75em;
-    border-left:1px dotted green;
 }
 .filesize {
-    font-size:0.75em;
     border-left:1px dotted green;
 }
 

@@ -1,12 +1,7 @@
 <html>
-<head>
-<link href="song_styles.css" rel="stylesheet" type="text/css" />
-
-<title>Virtual Campfire</title>
-<script src="sorttable.js"></script>
-
+ <head>
+  <title>Virtual Campfire</title>
 <script>
-
 function choose(url) { 
   window.currentAudioElement = document.getElementById('player');
   if (typeof window.currentAudioElement === 'undefined') { 
@@ -20,9 +15,9 @@ function choose(url) {
     window.currentAudioElement.play();
   }
 }
-
 </script>
-
+<link href="song_styles.css" rel="stylesheet" type="text/css" />
+<script src="sorttable.js"></script>
 </head>
 <body>
 
@@ -35,7 +30,7 @@ function choose(url) {
 </audio>
 <div id="left" style='float:left; width:20%; textalign:left;'>
 <div id="logo"></div>
-<ul class="para">
+<ul>
 <li>Click on song titles to play them</li>
 <li>Click on headings to sort the list</li>
 <li>Email <a href="mailto:fergus@virtualcampfire.co.uk">Fergus</a> to contribute songs or feedback</li>
@@ -72,10 +67,8 @@ foreach($files as $filename) {
 	$title=str_replace("-", " ", $title );	
 	print 
 '<tr class="song">
-  <td>
-   <div class="song">
-    <a onclick="choose(\''.rawurlencode($filename).'\')">'.$title.'</a>
-   </div>
+  <td class="songname">
+    <a onclick="choose(\''.rawurlencode($filename).'\')"> '.$title.'</a>
   </td>
   <td class="download">
      <a href="'.$filename.'" title="On some systems you\'ll need to right-click the \'Download\' link and choose \'Save as\' or similar, to stop it just playing the song in your browser.">Download</a>
