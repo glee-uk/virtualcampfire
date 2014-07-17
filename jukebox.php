@@ -44,6 +44,13 @@ to learn and teach traditional songs online.
 </p>
 <table id="songlist" class="sortable">
 <?php	
+// Install with: sudo apt-get install php-getid3
+require_once('/usr/share/php/getid3/getid3.php'); 
+
+// Initialize getID3 engine 
+$getID3 = new getID3; 
+
+
 	$handle = opendir(".");
 
 while ($filename = readdir($handle)) {
@@ -56,17 +63,24 @@ while ($filename = readdir($handle)) {
 natcasesort($files);
 
 foreach($files as $filename) {
-    $filetime=filemtime($filename);
-    $file_mb = round((filesize($filename) / 1048576), 2);
-	$title=str_replace(".mp3", "", $filename );	
-	$title=str_replace("_", " ", $title );	
-	$title=str_replace("-", " ", $title );	
-	print 
+  $ThisFileInfo = $getID3->analyze($filename); 
+
+  $filetime = filemtime($filename);
+  $file_mb  = round((filesize($filename) / 1048576), 2);
+  $title = str_replace(".mp3", "", $filename );	
+  $title = str_replace("_", " ", $title );	
+  $title=str_replace("-", " ", $title );	
+  print 
 '<tr class="song">
   <td class="songname">
-    <a onclick="choose(\''.rawurlencode($filename).'\')"> 
+    <a onclick="choose(\''.rawurlencode($filename).'\')"
+       title="['.$ThisFileInfo['playtime_string'].']"
+    > 
     <img src="playbutton.png" alt="Play '.$title.'">
      '.$title.'
+
+
+
     </a>
   </td>
   <td class="download">
@@ -76,6 +90,7 @@ foreach($files as $filename) {
   </td>
 </tr>
 ';
+
 }
 ?>
 </table>
