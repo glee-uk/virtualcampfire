@@ -17,7 +17,6 @@ function choose(url) {
 }
 </script>
 <link href="song_styles.css" rel="stylesheet" type="text/css" />
-<script src="sorttable.js"></script>
 </head>
 <body>
 
@@ -31,8 +30,6 @@ function choose(url) {
 <div id="left" style='float:left; width:20%; textalign:left;'>
 <div id="logo"></div>
 <ul>
-<li>Click on song titles to play them</li>
-<li>Click on headings to sort the list</li>
 <li>Email <a href="mailto:fergus@virtualcampfire.co.uk">Fergus</a> to contribute songs or feedback</li>
 <li>
 Or make a <a href="https://github.com/timp/virtualccampfire">pull request</a>
@@ -46,7 +43,6 @@ A place for <a href="http://fsc.org.uk/">Forest School Campers</a>
 to learn and teach traditional songs online. 
 </p>
 <table id="songlist" class="sortable">
-<tr><th>Song</th><th class="download">mp3</th><th class="filesize">Size (MB)</th></tr>
 <?php	
 	$handle = opendir(".");
 
@@ -68,12 +64,12 @@ foreach($files as $filename) {
 	print 
 '<tr class="song">
   <td class="songname">
-    <a onclick="choose(\''.rawurlencode($filename).'\')"> '.$title.'</a>
+    <a onclick="choose(\''.rawurlencode($filename).'\')"> &nbsp; '.$title.'</a>
   </td>
   <td class="download">
-     <a href="'.$filename.'" title="On some systems you\'ll need to right-click the \'Download\' link and choose \'Save as\' or similar, to stop it just playing the song in your browser.">Download</a>
+     <a href="'.$filename.'" title="On some systems you\'ll need to right-click the \'Download\' link and choose \'Save as\' or similar, to stop it just playing the song in your browser.">mp3</a>
   </td>
-  <td class="filesize">'.$file_mb.'</td>
+  <td class="filesize">'.$file_mb.' MB</td>
 </tr>
 ';
 }
@@ -87,9 +83,6 @@ This page was originally put together by <a href="http://leomurray.co.uk">Leo Mu
 </p>
 <p>
 <a href="http://tim.pizey.net/">Tim</a> updated the site in July 2014.
-</p>
-<p>
-The table-sorting code is thanks to <a href="http://www.kryogenix.org/code/browser/sorttable/">Stuart Langridge</a>.
 </p>
 </div>
 </body>
