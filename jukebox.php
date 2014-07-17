@@ -64,12 +64,16 @@ foreach($files as $filename) {
 	print 
 '<tr class="song">
   <td class="songname">
-    <a onclick="choose(\''.rawurlencode($filename).'\')"> &nbsp; '.$title.'</a>
+    <a onclick="choose(\''.rawurlencode($filename).'\')"> 
+    <img src="playbutton.png" alt="Play '.$title.'">
+     '.$title.'
+    </a>
   </td>
   <td class="download">
-     <a href="'.$filename.'" title="On some systems you\'ll need to right-click the \'Download\' link and choose \'Save as\' or similar, to stop it just playing the song in your browser.">mp3</a>
+    <a href="'.$filename.'" title="Download '.$file_mb.'Mb mp3">
+      <img src="downloadButton.png" alt="Download raw mp3">
+    </a>
   </td>
-  <td class="filesize">'.$file_mb.' MB</td>
 </tr>
 ';
 }

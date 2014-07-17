@@ -32,10 +32,6 @@ th {
     margin: 5px;
     color: #FFFFFF; 
 }
-.songname a {
-    background:transparent url(playbutton.png) no-repeat scroll left center;
-    padding: 5px 1px 5px 18px;
-}
 #songlist td {
     padding: 4px;
     border-bottom:1px dotted green;
@@ -48,12 +44,7 @@ th {
 .song a:link {
     text-decoration:none;
 }
-.download {
-    border-left:1px dotted green;
-}
-.filesize {
-    border-left:1px dotted green;
-}
+
 
 #songlist {
     border:2px inset green;
