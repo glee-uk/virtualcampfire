@@ -14,7 +14,32 @@ function choose(url) {
     window.currentAudioElement.src = url;
     window.currentAudioElement.play();
   }
+
+  var client = new XMLHttpRequest();
+  client.open('GET', findTitle(url));
+  client.onreadystatechange = function() {
+     var parseDOM = document.createElement('iframe');
+     
+     document.getElementById('lyrics').innerHTML = client.responseText;
+
+  }
+  client.send();
+
 }
+
+function findTitle(url) { 
+  var plain = new RegExp("^([^\(]+)\.mp3$");
+  var m = plain.exec(url);
+  if (m != null) { 
+   alert(m[1]);
+   return m[1] + ".html";
+  } else { 
+   return "foo.txt";
+  }
+
+} 
+
+
 </script>
 <link href="song_styles.css" rel="stylesheet" type="text/css" />
 </head>
@@ -35,6 +60,8 @@ function choose(url) {
 Or make a <a href="https://github.com/timp/virtualccampfire">pull request</a>
 </li>
 </ul>
+<div id="lyrics" style="background-color:#FFF; "></div>
+
 </div>
 <div align='center'>
 <h1>Virtual Campfire</h1>
