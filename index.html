@@ -14,7 +14,32 @@ function choose(url) {
     window.currentAudioElement.src = url;
     window.currentAudioElement.play();
   }
+
+  var client = new XMLHttpRequest();
+  client.open('GET', findTitle(url));
+  client.onreadystatechange = function() {
+     var parseDOM = document.createElement('iframe');
+     
+     document.getElementById('lyrics').innerHTML = client.responseText;
+
+  }
+  client.send();
+
 }
+
+function findTitle(url) { 
+  var plain = new RegExp("^([^\(]+)\.mp3$");
+  var m = plain.exec(url);
+  if (m != null) { 
+   alert(m[1]);
+   return m[1] + ".html";
+  } else { 
+   return "foo.txt";
+  }
+
+} 
+
+
 </script>
 <link href="song_styles.css" rel="stylesheet" type="text/css" />
 </head>
@@ -35,6 +60,8 @@ function choose(url) {
 Or make a <a href="https://github.com/timp/virtualccampfire">pull request</a>
 </li>
 </ul>
+<div id="lyrics" style="background-color:#FFF; "></div>
+
 </div>
 <div align='center'>
 <h1>Virtual Campfire</h1>
@@ -75,6 +102,24 @@ to learn and teach traditional songs online.
   </td>
   <td class="download">
     <a href="Ain't_Gonna_Study_War.mp3" title="Download 3.29Mb mp3">
+      <img src="downloadButton.png" alt="Download raw mp3">
+    </a>
+  </td>
+</tr>
+<tr class="song">
+  <td class="songname">
+    <a onclick="choose('Ain%27t_Gonna_Study_War_%28Parts%29.mp3')"
+       title="[1:41]"
+    > 
+    <img src="playbutton.png" alt="Play Ain't Gonna Study War (Parts)">
+     Ain't Gonna Study War (Parts)
+
+
+
+    </a>
+  </td>
+  <td class="download">
+    <a href="Ain't_Gonna_Study_War_(Parts).mp3" title="Download 0.77Mb mp3">
       <img src="downloadButton.png" alt="Download raw mp3">
     </a>
   </td>
@@ -633,6 +678,24 @@ to learn and teach traditional songs online.
   </td>
   <td class="download">
     <a href="Blackbirds_And_Thrushes_(02).mp3" title="Download 1.61Mb mp3">
+      <img src="downloadButton.png" alt="Download raw mp3">
+    </a>
+  </td>
+</tr>
+<tr class="song">
+  <td class="songname">
+    <a onclick="choose('Blackbirds_And_Thrushes_%2803%29.mp3')"
+       title="[1:49]"
+    > 
+    <img src="playbutton.png" alt="Play Blackbirds And Thrushes (03)">
+     Blackbirds And Thrushes (03)
+
+
+
+    </a>
+  </td>
+  <td class="download">
+    <a href="Blackbirds_And_Thrushes_(03).mp3" title="Download 1.67Mb mp3">
       <img src="downloadButton.png" alt="Download raw mp3">
     </a>
   </td>
@@ -2835,24 +2898,6 @@ to learn and teach traditional songs online.
 </tr>
 <tr class="song">
   <td class="songname">
-    <a onclick="choose('If_Women_Could..._.mp3')"
-       title="[1:49]"
-    > 
-    <img src="playbutton.png" alt="Play If Women Could... ">
-     If Women Could... 
-
-
-
-    </a>
-  </td>
-  <td class="download">
-    <a href="If_Women_Could..._.mp3" title="Download 1.67Mb mp3">
-      <img src="downloadButton.png" alt="Download raw mp3">
-    </a>
-  </td>
-</tr>
-<tr class="song">
-  <td class="songname">
     <a onclick="choose('If_You_Want_To_See_The_General.mp3')"
        title="[1:55]"
     > 
@@ -3531,24 +3576,6 @@ to learn and teach traditional songs online.
   </td>
   <td class="download">
     <a href="Lady_And_The_Crocodile.mp3" title="Download 0.52Mb mp3">
-      <img src="downloadButton.png" alt="Download raw mp3">
-    </a>
-  </td>
-</tr>
-<tr class="song">
-  <td class="songname">
-    <a onclick="choose('Lay_Down.mp3')"
-       title="[1:41]"
-    > 
-    <img src="playbutton.png" alt="Play Lay Down">
-     Lay Down
-
-
-
-    </a>
-  </td>
-  <td class="download">
-    <a href="Lay_Down.mp3" title="Download 0.77Mb mp3">
       <img src="downloadButton.png" alt="Download raw mp3">
     </a>
   </td>
@@ -6003,6 +6030,24 @@ to learn and teach traditional songs online.
 </tr>
 <tr class="song">
   <td class="songname">
+    <a onclick="choose('Shtomni_Omi_Lalo_Mali_%28In_The_Crypt%29.mp3')"
+       title="[2:02]"
+    > 
+    <img src="playbutton.png" alt="Play Shtomni Omi Lalo Mali (In The Crypt)">
+     Shtomni Omi Lalo Mali (In The Crypt)
+
+
+
+    </a>
+  </td>
+  <td class="download">
+    <a href="Shtomni_Omi_Lalo_Mali_(In_The_Crypt).mp3" title="Download 2.79Mb mp3">
+      <img src="downloadButton.png" alt="Download raw mp3">
+    </a>
+  </td>
+</tr>
+<tr class="song">
+  <td class="songname">
     <a onclick="choose('Shtomni_Omi_Lalo_Mali_%28Parts%29.mp3')"
        title="[4:01]"
     > 
@@ -6015,24 +6060,6 @@ to learn and teach traditional songs online.
   </td>
   <td class="download">
     <a href="Shtomni_Omi_Lalo_Mali_(Parts).mp3" title="Download 5.52Mb mp3">
-      <img src="downloadButton.png" alt="Download raw mp3">
-    </a>
-  </td>
-</tr>
-<tr class="song">
-  <td class="songname">
-    <a onclick="choose('Shtomni_Omni_Lalo_Mali_%28In_The_Crypt%29.mp3')"
-       title="[2:02]"
-    > 
-    <img src="playbutton.png" alt="Play Shtomni Omni Lalo Mali (In The Crypt)">
-     Shtomni Omni Lalo Mali (In The Crypt)
-
-
-
-    </a>
-  </td>
-  <td class="download">
-    <a href="Shtomni_Omni_Lalo_Mali_(In_The_Crypt).mp3" title="Download 2.79Mb mp3">
       <img src="downloadButton.png" alt="Download raw mp3">
     </a>
   </td>
