@@ -15,9 +15,23 @@ function choose(url) {
     window.currentAudioElement.play();
   }
 
-  var win = window.open(lyricsUrl(url));
+  var lUrl = lyricsUrl(url);
+  var urlExists = false;
+  var request = new XMLHttpRequest();  
+  // Open a synchronous request so that urlExists is set
+  request.open('GET', lUrl, false);
+  request.onreadystatechange = function(){
+    if (request.readyState === 4){
+      if (request.status !== 404) {
+        urlExists = true;
+      }
+    }
+  };
+  request.send();
+  if (urlExists) {         
+   window.open(lUrl, 'lyrics');
+  }
 }
-
 
 function lyricsUrl(url) { 
   var plain = new RegExp("^([^\(]+)\.mp3$");

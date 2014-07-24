@@ -15,9 +15,23 @@ function choose(url) {
     window.currentAudioElement.play();
   }
 
-  var win = window.open(lyricsUrl(url));
+  var lUrl = lyricsUrl(url);
+  var urlExists = false;
+  var request = new XMLHttpRequest();  
+  // Open a synchronous request so that urlExists is set
+  request.open('GET', lUrl, false);
+  request.onreadystatechange = function(){
+    if (request.readyState === 4){
+      if (request.status !== 404) {
+        urlExists = true;
+      }
+    }
+  };
+  request.send();
+  if (urlExists) {         
+   window.open(lUrl, 'lyrics');
+  }
 }
-
 
 function lyricsUrl(url) { 
   var plain = new RegExp("^([^\(]+)\.mp3$");
@@ -1345,6 +1359,24 @@ to learn and teach traditional songs online.
 </tr>
 <tr class="song">
   <td class="songname">
+    <a onclick="choose('Dark_As_A_Dungeon_%2802%29.mp3')"
+       title="[2:55]"
+    > 
+    <img src="playbutton.png" alt="Play Dark As A Dungeon (02)">
+     Dark As A Dungeon (02)
+
+
+
+    </a>
+  </td>
+  <td class="download">
+    <a href="Dark_As_A_Dungeon_(02).mp3" title="Download 2.67Mb mp3">
+      <img src="downloadButton.png" alt="Download raw mp3">
+    </a>
+  </td>
+</tr>
+<tr class="song">
+  <td class="songname">
     <a onclick="choose('Dark_As_A_Dungeon_%28In_The_Crypt%29.mp3')"
        title="[3:05]"
     > 
@@ -1357,24 +1389,6 @@ to learn and teach traditional songs online.
   </td>
   <td class="download">
     <a href="Dark_As_A_Dungeon_(In_The_Crypt).mp3" title="Download 4.95Mb mp3">
-      <img src="downloadButton.png" alt="Download raw mp3">
-    </a>
-  </td>
-</tr>
-<tr class="song">
-  <td class="songname">
-    <a onclick="choose('Dark_As_Dungeon_%2802%29.mp3')"
-       title="[2:55]"
-    > 
-    <img src="playbutton.png" alt="Play Dark As Dungeon (02)">
-     Dark As Dungeon (02)
-
-
-
-    </a>
-  </td>
-  <td class="download">
-    <a href="Dark_As_Dungeon_(02).mp3" title="Download 2.67Mb mp3">
       <img src="downloadButton.png" alt="Download raw mp3">
     </a>
   </td>
