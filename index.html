@@ -15,30 +15,27 @@ function choose(url) {
     window.currentAudioElement.play();
   }
 
-  var client = new XMLHttpRequest();
-  client.open('GET', findTitle(url));
-  client.onreadystatechange = function() {
-     var parseDOM = document.createElement('iframe');
-     
-     document.getElementById('lyrics').innerHTML = client.responseText;
-
-  }
-  client.send();
-
+  var win = window.open(lyricsUrl(url));
 }
 
-function findTitle(url) { 
+
+function lyricsUrl(url) { 
   var plain = new RegExp("^([^\(]+)\.mp3$");
-  var m = plain.exec(url);
+  var m = plain.exec(decodeURI(url));
   if (m != null) { 
-   alert(m[1]);
    return m[1] + ".html";
   } else { 
-   return "foo.txt";
+   var withBrackets = new RegExp(/^([^\(]+?)_\(([^\)]+)\)/);
+   var wb = withBrackets.exec(decodeURI(url));
+   if (wb != null) { 
+     return wb[1] + ".html";
+   } else { 
+     alert('foo');
+     return "foo.txt";
+   }
   }
 
 } 
-
 
 </script>
 <link href="song_styles.css" rel="stylesheet" type="text/css" />
@@ -60,8 +57,6 @@ function findTitle(url) {
 Or make a <a href="https://github.com/timp/virtualccampfire">pull request</a>
 </li>
 </ul>
-<div id="lyrics" style="background-color:#FFF; "></div>
-
 </div>
 <div align='center'>
 <h1>Virtual Campfire</h1>
@@ -2988,6 +2983,24 @@ to learn and teach traditional songs online.
 </tr>
 <tr class="song">
   <td class="songname">
+    <a onclick="choose('I_Am_A_Tower_Of_Strength_%28Postcamps_07%29.mp3')"
+       title="[3:29]"
+    > 
+    <img src="playbutton.png" alt="Play I Am A Tower Of Strength (Postcamps 07)">
+     I Am A Tower Of Strength (Postcamps 07)
+
+
+
+    </a>
+  </td>
+  <td class="download">
+    <a href="I_Am_A_Tower_Of_Strength_(Postcamps_07).mp3" title="Download 3.2Mb mp3">
+      <img src="downloadButton.png" alt="Download raw mp3">
+    </a>
+  </td>
+</tr>
+<tr class="song">
+  <td class="songname">
     <a onclick="choose('I_Dare_Not_Let_You_In.mp3')"
        title="[1:20]"
     > 
@@ -3360,24 +3373,6 @@ to learn and teach traditional songs online.
   </td>
   <td class="download">
     <a href="John_John_Where_Have_You_Been_All_Night_(02).mp3" title="Download 3.27Mb mp3">
-      <img src="downloadButton.png" alt="Download raw mp3">
-    </a>
-  </td>
-</tr>
-<tr class="song">
-  <td class="songname">
-    <a onclick="choose('Jug_Of_Punch.mp3')"
-       title="[2:13]"
-    > 
-    <img src="playbutton.png" alt="Play Jug Of Punch">
-     Jug Of Punch
-
-
-
-    </a>
-  </td>
-  <td class="download">
-    <a href="Jug_Of_Punch.mp3" title="Download 3.55Mb mp3">
       <img src="downloadButton.png" alt="Download raw mp3">
     </a>
   </td>
@@ -4116,24 +4111,6 @@ to learn and teach traditional songs online.
   </td>
   <td class="download">
     <a href="May_The_Circle_Be_Unbroken_(Band).mp3" title="Download 1.24Mb mp3">
-      <img src="downloadButton.png" alt="Download raw mp3">
-    </a>
-  </td>
-</tr>
-<tr class="song">
-  <td class="songname">
-    <a onclick="choose('Midnight_Special.mp3')"
-       title="[1:50]"
-    > 
-    <img src="playbutton.png" alt="Play Midnight Special">
-     Midnight Special
-
-
-
-    </a>
-  </td>
-  <td class="download">
-    <a href="Midnight_Special.mp3" title="Download 1.68Mb mp3">
       <img src="downloadButton.png" alt="Download raw mp3">
     </a>
   </td>
@@ -5034,6 +5011,78 @@ to learn and teach traditional songs online.
   </td>
   <td class="download">
     <a href="Plastic_Jesus_(Putney_Allstars).mp3" title="Download 2.25Mb mp3">
+      <img src="downloadButton.png" alt="Download raw mp3">
+    </a>
+  </td>
+</tr>
+<tr class="song">
+  <td class="songname">
+    <a onclick="choose('Pleasant_And_Delightful_%2801%29.mp3')"
+       title="[5:26]"
+    > 
+    <img src="playbutton.png" alt="Play Pleasant And Delightful (01)">
+     Pleasant And Delightful (01)
+
+
+
+    </a>
+  </td>
+  <td class="download">
+    <a href="Pleasant_And_Delightful_(01).mp3" title="Download 7.46Mb mp3">
+      <img src="downloadButton.png" alt="Download raw mp3">
+    </a>
+  </td>
+</tr>
+<tr class="song">
+  <td class="songname">
+    <a onclick="choose('Pleasant_And_Delightful_%2802%29.mp3')"
+       title="[3:26]"
+    > 
+    <img src="playbutton.png" alt="Play Pleasant And Delightful (02)">
+     Pleasant And Delightful (02)
+
+
+
+    </a>
+  </td>
+  <td class="download">
+    <a href="Pleasant_And_Delightful_(02).mp3" title="Download 3.14Mb mp3">
+      <img src="downloadButton.png" alt="Download raw mp3">
+    </a>
+  </td>
+</tr>
+<tr class="song">
+  <td class="songname">
+    <a onclick="choose('Pleasant_And_Delightful_%28Barnyard%29.mp3')"
+       title="[3:49]"
+    > 
+    <img src="playbutton.png" alt="Play Pleasant And Delightful (Barnyard)">
+     Pleasant And Delightful (Barnyard)
+
+
+
+    </a>
+  </td>
+  <td class="download">
+    <a href="Pleasant_And_Delightful_(Barnyard).mp3" title="Download 3.49Mb mp3">
+      <img src="downloadButton.png" alt="Download raw mp3">
+    </a>
+  </td>
+</tr>
+<tr class="song">
+  <td class="songname">
+    <a onclick="choose('Pleasant_And_Delightful_%28North%29.mp3')"
+       title="[3:42]"
+    > 
+    <img src="playbutton.png" alt="Play Pleasant And Delightful (North)">
+     Pleasant And Delightful (North)
+
+
+
+    </a>
+  </td>
+  <td class="download">
+    <a href="Pleasant_And_Delightful_(North).mp3" title="Download 4.23Mb mp3">
       <img src="downloadButton.png" alt="Download raw mp3">
     </a>
   </td>
@@ -6390,18 +6439,36 @@ to learn and teach traditional songs online.
 </tr>
 <tr class="song">
   <td class="songname">
-    <a onclick="choose('Stealin.mp3')"
+    <a onclick="choose('Stealin%27_%2801%29.mp3')"
        title="[1:51]"
     > 
-    <img src="playbutton.png" alt="Play Stealin">
-     Stealin
+    <img src="playbutton.png" alt="Play Stealin' (01)">
+     Stealin' (01)
 
 
 
     </a>
   </td>
   <td class="download">
-    <a href="Stealin.mp3" title="Download 1.7Mb mp3">
+    <a href="Stealin'_(01).mp3" title="Download 1.7Mb mp3">
+      <img src="downloadButton.png" alt="Download raw mp3">
+    </a>
+  </td>
+</tr>
+<tr class="song">
+  <td class="songname">
+    <a onclick="choose('Stealin%27_%2802%29.mp3')"
+       title="[1:50]"
+    > 
+    <img src="playbutton.png" alt="Play Stealin' (02)">
+     Stealin' (02)
+
+
+
+    </a>
+  </td>
+  <td class="download">
+    <a href="Stealin'_(02).mp3" title="Download 1.68Mb mp3">
       <img src="downloadButton.png" alt="Download raw mp3">
     </a>
   </td>
@@ -6696,72 +6763,18 @@ to learn and teach traditional songs online.
 </tr>
 <tr class="song">
   <td class="songname">
-    <a onclick="choose('The_Larks_They_Sang_Melodious_%2801%29.mp3')"
-       title="[5:26]"
+    <a onclick="choose('The_Jug_Of_Punch.mp3')"
+       title="[2:13]"
     > 
-    <img src="playbutton.png" alt="Play The Larks They Sang Melodious (01)">
-     The Larks They Sang Melodious (01)
+    <img src="playbutton.png" alt="Play The Jug Of Punch">
+     The Jug Of Punch
 
 
 
     </a>
   </td>
   <td class="download">
-    <a href="The_Larks_They_Sang_Melodious_(01).mp3" title="Download 7.46Mb mp3">
-      <img src="downloadButton.png" alt="Download raw mp3">
-    </a>
-  </td>
-</tr>
-<tr class="song">
-  <td class="songname">
-    <a onclick="choose('The_Larks_They_Sang_Melodious_%2802%29.mp3')"
-       title="[3:26]"
-    > 
-    <img src="playbutton.png" alt="Play The Larks They Sang Melodious (02)">
-     The Larks They Sang Melodious (02)
-
-
-
-    </a>
-  </td>
-  <td class="download">
-    <a href="The_Larks_They_Sang_Melodious_(02).mp3" title="Download 3.14Mb mp3">
-      <img src="downloadButton.png" alt="Download raw mp3">
-    </a>
-  </td>
-</tr>
-<tr class="song">
-  <td class="songname">
-    <a onclick="choose('The_Larks_They_Sang_Melodious_%28Barnyard%29.mp3')"
-       title="[3:49]"
-    > 
-    <img src="playbutton.png" alt="Play The Larks They Sang Melodious (Barnyard)">
-     The Larks They Sang Melodious (Barnyard)
-
-
-
-    </a>
-  </td>
-  <td class="download">
-    <a href="The_Larks_They_Sang_Melodious_(Barnyard).mp3" title="Download 3.49Mb mp3">
-      <img src="downloadButton.png" alt="Download raw mp3">
-    </a>
-  </td>
-</tr>
-<tr class="song">
-  <td class="songname">
-    <a onclick="choose('The_Larks_They_Sang_Melodious_%28North%29.mp3')"
-       title="[3:42]"
-    > 
-    <img src="playbutton.png" alt="Play The Larks They Sang Melodious (North)">
-     The Larks They Sang Melodious (North)
-
-
-
-    </a>
-  </td>
-  <td class="download">
-    <a href="The_Larks_They_Sang_Melodious_(North).mp3" title="Download 4.23Mb mp3">
+    <a href="The_Jug_Of_Punch.mp3" title="Download 3.55Mb mp3">
       <img src="downloadButton.png" alt="Download raw mp3">
     </a>
   </td>
@@ -7068,24 +7081,6 @@ to learn and teach traditional songs online.
   </td>
   <td class="download">
     <a href="Toori_Ay.mp3" title="Download 2.61Mb mp3">
-      <img src="downloadButton.png" alt="Download raw mp3">
-    </a>
-  </td>
-</tr>
-<tr class="song">
-  <td class="songname">
-    <a onclick="choose('Tower_Of_Strength_%28Postcamps_07%29.mp3')"
-       title="[3:29]"
-    > 
-    <img src="playbutton.png" alt="Play Tower Of Strength (Postcamps 07)">
-     Tower Of Strength (Postcamps 07)
-
-
-
-    </a>
-  </td>
-  <td class="download">
-    <a href="Tower_Of_Strength_(Postcamps_07).mp3" title="Download 3.2Mb mp3">
       <img src="downloadButton.png" alt="Download raw mp3">
     </a>
   </td>

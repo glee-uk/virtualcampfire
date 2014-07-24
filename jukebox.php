@@ -15,30 +15,27 @@ function choose(url) {
     window.currentAudioElement.play();
   }
 
-  var client = new XMLHttpRequest();
-  client.open('GET', findTitle(url));
-  client.onreadystatechange = function() {
-     var parseDOM = document.createElement('iframe');
-     
-     document.getElementById('lyrics').innerHTML = client.responseText;
-
-  }
-  client.send();
-
+  var win = window.open(lyricsUrl(url));
 }
 
-function findTitle(url) { 
+
+function lyricsUrl(url) { 
   var plain = new RegExp("^([^\(]+)\.mp3$");
-  var m = plain.exec(url);
+  var m = plain.exec(decodeURI(url));
   if (m != null) { 
-   alert(m[1]);
    return m[1] + ".html";
   } else { 
-   return "foo.txt";
+   var withBrackets = new RegExp(/^([^\(]+?)_\(([^\)]+)\)/);
+   var wb = withBrackets.exec(decodeURI(url));
+   if (wb != null) { 
+     return wb[1] + ".html";
+   } else { 
+     alert('foo');
+     return "foo.txt";
+   }
   }
 
 } 
-
 
 </script>
 <link href="song_styles.css" rel="stylesheet" type="text/css" />
@@ -61,7 +58,6 @@ Or make a <a href="https://github.com/timp/virtualccampfire">pull request</a>
 </li>
 </ul>
 </div>
-<div id="lyrics" style="background-color:#FFF; "></div>
 <div align='center'>
 <h1>Virtual Campfire</h1>
 <p>
