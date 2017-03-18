@@ -81,7 +81,8 @@ to learn and teach traditional songs online.
 <table id="songlist" class="sortable">
 <?php	
 // Install with: sudo apt-get install php-getid3
-require_once('/usr/share/php/getid3/getid3.php'); 
+// or use  getid3/getID3-1.9.12/getid3/
+require_once('getid3/getID3-1.9.12/getid3/getid3.php'); 
 
 // Initialize getID3 engine 
 $getID3 = new getID3; 
