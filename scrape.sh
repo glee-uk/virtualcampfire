@@ -44,6 +44,11 @@ if [ ! -f "Ally\_Bally.mp3" ]
  then
   wget http://www.virtualcampfire.co.uk/songs/Ally%20Bally.mp3 -O Ally\_Bally.mp3
 fi
+#A\_Mighty\_Rocky\_Road\__\_In\_The\_Crypt.mp3
+if [ ! -f "A\_Mighty\_Rocky\_Road\__\_In\_The\_Crypt.mp3" ]
+ then
+  wget http://www.virtualcampfire.co.uk/songs/a%20mighty%20rocky%20road%20-%20in%20the%20crypt.mp3 -O A\_Mighty\_Rocky\_Road\__\_In\_The\_Crypt.mp3
+fi
 #Anchored\_In\_Love\_\(Barnyard\).mp3
 if [ ! -f "Anchored\_In\_Love\_\(Barnyard\).mp3" ]
  then
@@ -79,6 +84,16 @@ if [ ! -f "As\_She\_Moved\_Through\_The\_Fair.mp3" ]
  then
   wget http://www.virtualcampfire.co.uk/songs/As%20She%20Moved%20Through%20the%20Fair.mp3 -O As\_She\_Moved\_Through\_The\_Fair.mp3
 fi
+#Azikatali\__\_Fenwood\_Glee\_14..mp3
+if [ ! -f "Azikatali\__\_Fenwood\_Glee\_14..mp3" ]
+ then
+  wget http://www.virtualcampfire.co.uk/songs/Azikatali%20-%20Fenwood%20Glee%2014..mp3 -O Azikatali\__\_Fenwood\_Glee\_14..mp3
+fi
+#Azikatali\__\_In\_The\_Crypt.mp3
+if [ ! -f "Azikatali\__\_In\_The\_Crypt.mp3" ]
+ then
+  wget http://www.virtualcampfire.co.uk/songs/azikatali%20-%20in%20the%20crypt.mp3 -O Azikatali\__\_In\_The\_Crypt.mp3
+fi
 #Baba\_Kukuduku\_\(Fireside\).mp3
 if [ ! -f "Baba\_Kukuduku\_\(Fireside\).mp3" ]
  then
@@ -103,6 +118,11 @@ fi
 if [ ! -f "Baby\_Tonight.mp3" ]
  then
   wget http://www.virtualcampfire.co.uk/songs/BABY%20TONIGHT.mp3 -O Baby\_Tonight.mp3
+fi
+#Bambalayla\__\_In\_The\_Crypt\_Nov\_14.mp3
+if [ ! -f "Bambalayla\__\_In\_The\_Crypt\_Nov\_14.mp3" ]
+ then
+  wget http://www.virtualcampfire.co.uk/songs/Bambalayla%20-%20in%20the%20crypt%20Nov%2014.mp3 -O Bambalayla\__\_In\_The\_Crypt\_Nov\_14.mp3
 fi
 #Banjo\_Break.mp3
 if [ ! -f "Banjo\_Break.mp3" ]
@@ -154,6 +174,11 @@ if [ ! -f "Belle\_Mama.mp3" ]
  then
   wget http://www.virtualcampfire.co.uk/songs/Belle%20mama.mp3 -O Belle\_Mama.mp3
 fi
+#Bessie\'S\_Bumble\_Bee\__\_Stable\_Singers.mp3
+if [ ! -f "Bessie\'S\_Bumble\_Bee\__\_Stable\_Singers.mp3" ]
+ then
+  wget http://www.virtualcampfire.co.uk/songs/bessie\'s%20bumble%20bee%20-%20stable%20singers.mp3 -O Bessie\'S\_Bumble\_Bee\__\_Stable\_Singers.mp3
+fi
 #Blackbird.mp3
 if [ ! -f "Blackbird.mp3" ]
  then
@@ -194,10 +219,25 @@ if [ ! -f "Blustery\_Fireside\_Pipes.mp3" ]
  then
   wget http://www.virtualcampfire.co.uk/songs/blustery%20fireside%20pipes.mp3 -O Blustery\_Fireside\_Pipes.mp3
 fi
+#Boatman\_And\_Me\__\_Stable\_Singers.mp3
+if [ ! -f "Boatman\_And\_Me\__\_Stable\_Singers.mp3" ]
+ then
+  wget http://www.virtualcampfire.co.uk/songs/boatman%20and%20me%20-%20stable%20singers.mp3 -O Boatman\_And\_Me\__\_Stable\_Singers.mp3
+fi
 #Boggy_Boggy.mp3
 if [ ! -f "Boggy_Boggy.mp3" ]
  then
   wget http://www.virtualcampfire.co.uk/songs/boggy_boggy.mp3 -O Boggy_Boggy.mp3
+fi
+#Bold\_Riley\__\_Couple\_Of\_Parts\__\_Stable\_Singers.mp3
+if [ ! -f "Bold\_Riley\__\_Couple\_Of\_Parts\__\_Stable\_Singers.mp3" ]
+ then
+  wget http://www.virtualcampfire.co.uk/songs/bold%20riley%20-%20couple%20of%20parts%20-%20stable%20singers.mp3 -O Bold\_Riley\__\_Couple\_Of\_Parts\__\_Stable\_Singers.mp3
+fi
+#Bold\_Riley\__\_Stable\_Singers.mp3
+if [ ! -f "Bold\_Riley\__\_Stable\_Singers.mp3" ]
+ then
+  wget http://www.virtualcampfire.co.uk/songs/bold%20riley%20-%20stable%20singers.mp3 -O Bold\_Riley\__\_Stable\_Singers.mp3
 fi
 #Bon\_Soir.mp3
 if [ ! -f "Bon\_Soir.mp3" ]
@@ -209,10 +249,20 @@ if [ ! -f "Bon\_Soir\_01.mp3" ]
  then
   wget http://www.virtualcampfire.co.uk/songs/Bon%20Soir%2001.mp3 -O Bon\_Soir\_01.mp3
 fi
+#Bread\_And\_Roses\__\_In\_The\_Crypt\_Nov\_14.mp3
+if [ ! -f "Bread\_And\_Roses\__\_In\_The\_Crypt\_Nov\_14.mp3" ]
+ then
+  wget http://www.virtualcampfire.co.uk/songs/Bread%20and%20Roses%20-%20in%20the%20crypt%20Nov%2014.mp3 -O Bread\_And\_Roses\__\_In\_The\_Crypt\_Nov\_14.mp3
+fi
 #Break\_Em\_On\_Down.mp3
 if [ ! -f "Break\_Em\_On\_Down.mp3" ]
  then
   wget http://www.virtualcampfire.co.uk/songs/Break%20em%20on%20Down.mp3 -O Break\_Em\_On\_Down.mp3
+fi
+#Bright\_Morning\_Star\__\_In\_The\_Crypt.mp3
+if [ ! -f "Bright\_Morning\_Star\__\_In\_The\_Crypt.mp3" ]
+ then
+  wget http://www.virtualcampfire.co.uk/songs/bright%20morning%20star%20-%20in%20the%20crypt.mp3 -O Bright\_Morning\_Star\__\_In\_The\_Crypt.mp3
 fi
 #Bring\_Me\_Little\_Water\_Sylvie\__\_Parts.mp3
 if [ ! -f "Bring\_Me\_Little\_Water\_Sylvie\__\_Parts.mp3" ]
@@ -238,6 +288,16 @@ fi
 if [ ! -f "Burning\_Of\_Auchindon\__\_In\_The\_Crypt.mp3" ]
  then
   wget http://www.virtualcampfire.co.uk/songs/Burning%20of%20Auchindon%20-%20in%20the%20crypt.mp3 -O Burning\_Of\_Auchindon\__\_In\_The\_Crypt.mp3
+fi
+#By\_My\_Hands\__\_Stable\_Singers.mp3
+if [ ! -f "By\_My\_Hands\__\_Stable\_Singers.mp3" ]
+ then
+  wget http://www.virtualcampfire.co.uk/songs/by%20my%20hands%20-%20stable%20singers.mp3 -O By\_My\_Hands\__\_Stable\_Singers.mp3
+fi
+#By\_The\_Waters\_Of\_Babylon\__\_Fenwood\_Glee\_14.mp3
+if [ ! -f "By\_The\_Waters\_Of\_Babylon\__\_Fenwood\_Glee\_14.mp3" ]
+ then
+  wget http://www.virtualcampfire.co.uk/songs/By%20the%20Waters%20of%20Babylon%20-%20Fenwood%20Glee%2014.mp3 -O By\_The\_Waters\_Of\_Babylon\__\_Fenwood\_Glee\_14.mp3
 fi
 #By\_The\_Waters\_Of\_Babylon\_.mp3
 if [ ! -f "By\_The\_Waters\_Of\_Babylon\_.mp3" ]
@@ -324,6 +384,11 @@ if [ ! -f "Country\_Life.mp3" ]
  then
   wget http://www.virtualcampfire.co.uk/songs/Country%20Life.mp3 -O Country\_Life.mp3
 fi
+#Coventry\_Carol\__\_In\_The\_Crypt\_Dec\_14.mp3
+if [ ! -f "Coventry\_Carol\__\_In\_The\_Crypt\_Dec\_14.mp3" ]
+ then
+  wget http://www.virtualcampfire.co.uk/songs/Coventry%20Carol%20-%20in%20the%20crypt%20Dec%2014.mp3 -O Coventry\_Carol\__\_In\_The\_Crypt\_Dec\_14.mp3
+fi
 #Crazy\_Moose.mp3
 if [ ! -f "Crazy\_Moose.mp3" ]
  then
@@ -379,6 +444,11 @@ if [ ! -f "Deep\_Down\_In\_My\_Soul\__\_In\_The\_Crypt.mp3" ]
  then
   wget http://www.virtualcampfire.co.uk/songs/Deep%20Down%20in%20My%20Soul%20-%20in%20the%20crypt.mp3 -O Deep\_Down\_In\_My\_Soul\__\_In\_The\_Crypt.mp3
 fi
+#Deep\_Down\_In\_My\_Soul\__\_Stable\_Singers.mp3
+if [ ! -f "Deep\_Down\_In\_My\_Soul\__\_Stable\_Singers.mp3" ]
+ then
+  wget http://www.virtualcampfire.co.uk/songs/deep%20down%20in%20my%20soul%20-%20stable%20singers.mp3 -O Deep\_Down\_In\_My\_Soul\__\_Stable\_Singers.mp3
+fi
 #Deportees.mp3
 if [ ! -f "Deportees.mp3" ]
  then
@@ -413,6 +483,11 @@ fi
 if [ ! -f "Don\'T\_Let\_It\_Bother\_You.mp3" ]
  then
   wget http://www.virtualcampfire.co.uk/songs/Don\'t%20Let%20It%20Bother%20You.mp3 -O Don\'T\_Let\_It\_Bother\_You.mp3
+fi
+#Don\'T\_Think\_Twice\_It\'S\_Alright\__\_Stable\_Singers.mp3
+if [ ! -f "Don\'T\_Think\_Twice\_It\'S\_Alright\__\_Stable\_Singers.mp3" ]
+ then
+  wget http://www.virtualcampfire.co.uk/songs/don\'t%20think%20twice%20it\'s%20alright%20-%20stable%20singers.mp3 -O Don\'T\_Think\_Twice\_It\'S\_Alright\__\_Stable\_Singers.mp3
 fi
 #Don\'T\_You\_Hear\_Jerusalem\_Mourn.mp3
 if [ ! -f "Don\'T\_You\_Hear\_Jerusalem\_Mourn.mp3" ]
@@ -458,6 +533,11 @@ fi
 if [ ! -f "Down\_By\_The\_Riverside.mp3" ]
  then
   wget http://www.virtualcampfire.co.uk/songs/Down%20By%20the%20Riverside.mp3 -O Down\_By\_The\_Riverside.mp3
+fi
+#Down\_By\_The\_Riverside\_:\_Take\_This\_Hammer\_Mashup\__\_\(Oasis\_Glee\_14\).mp3
+if [ ! -f "Down\_By\_The\_Riverside\_:\_Take\_This\_Hammer\_Mashup\__\_\(Oasis\_Glee\_14\).mp3" ]
+ then
+  wget http://www.virtualcampfire.co.uk/songs/Down%20by%20the%20riverside%20:%20Take%20this%20hammer%20mashup%20-%20%28oasis%20glee%2014%29.mp3 -O Down\_By\_The\_Riverside\_:\_Take\_This\_Hammer\_Mashup\__\_\(Oasis\_Glee\_14\).mp3
 fi
 #Down\_In\_The\_Valley.mp3
 if [ ! -f "Down\_In\_The\_Valley.mp3" ]
@@ -529,10 +609,30 @@ if [ ! -f "Eerie\_Canal.mp3" ]
  then
   wget http://www.virtualcampfire.co.uk/songs/Eerie%20Canal.mp3 -O Eerie\_Canal.mp3
 fi
+#Eli\_You\_Can\'T\_Stand\__\_Fenwood\_Glee\_14.mp3
+if [ ! -f "Eli\_You\_Can\'T\_Stand\__\_Fenwood\_Glee\_14.mp3" ]
+ then
+  wget http://www.virtualcampfire.co.uk/songs/Eli%20You%20Can\'t%20Stand%20-%20Fenwood%20Glee%2014.mp3 -O Eli\_You\_Can\'T\_Stand\__\_Fenwood\_Glee\_14.mp3
+fi
+#Equestrian\_Interlude\__\_Stable\_Singers.mp3
+if [ ! -f "Equestrian\_Interlude\__\_Stable\_Singers.mp3" ]
+ then
+  wget http://www.virtualcampfire.co.uk/songs/equestrian%20interlude%20-%20stable%20singers.mp3 -O Equestrian\_Interlude\__\_Stable\_Singers.mp3
+fi
+#Fare\_Thee\_Well\_My\_Own\_True\_Love\__\_Stable\_Singers.mp3
+if [ ! -f "Fare\_Thee\_Well\_My\_Own\_True\_Love\__\_Stable\_Singers.mp3" ]
+ then
+  wget http://www.virtualcampfire.co.uk/songs/fare%20thee%20well%20my%20own%20true%20love%20-%20stable%20singers.mp3 -O Fare\_Thee\_Well\_My\_Own\_True\_Love\__\_Stable\_Singers.mp3
+fi
 #Farewell_Johnny_Miner.mp3
 if [ ! -f "Farewell_Johnny_Miner.mp3" ]
  then
   wget http://www.virtualcampfire.co.uk/songs/farewell_johnny_miner.mp3 -O Farewell_Johnny_Miner.mp3
+fi
+#Fathom\_The\_Bowl\__\_Stable\_Singers.mp3
+if [ ! -f "Fathom\_The\_Bowl\__\_Stable\_Singers.mp3" ]
+ then
+  wget http://www.virtualcampfire.co.uk/songs/fathom%20the%20bowl%20-%20stable%20singers.mp3 -O Fathom\_The\_Bowl\__\_Stable\_Singers.mp3
 fi
 #Fathom\_The\_Bowl.mp3
 if [ ! -f "Fathom\_The\_Bowl.mp3" ]
@@ -574,6 +674,11 @@ if [ ! -f "Fire\_Me\_Ringo.mp3" ]
  then
   wget http://www.virtualcampfire.co.uk/songs/Fire%20Me%20Ringo.mp3 -O Fire\_Me\_Ringo.mp3
 fi
+#Follow_The_Drinking_Gourd.mp3
+if [ ! -f "Follow_The_Drinking_Gourd.mp3" ]
+ then
+  wget http://www.virtualcampfire.co.uk/songs/follow_the_drinking_gourd.mp3 -O Follow_The_Drinking_Gourd.mp3
+fi
 #Four_Five_Seven_Nine.mp3
 if [ ! -f "Four_Five_Seven_Nine.mp3" ]
  then
@@ -584,15 +689,50 @@ if [ ! -f "Freedom\_For\_South\_Africa.mp3" ]
  then
   wget http://www.virtualcampfire.co.uk/songs/Freedom%20for%20South%20Africa.mp3 -O Freedom\_For\_South\_Africa.mp3
 fi
+#Freedom\_Is\_Coming\__\_Fenwood\_Glee\_14.mp3
+if [ ! -f "Freedom\_Is\_Coming\__\_Fenwood\_Glee\_14.mp3" ]
+ then
+  wget http://www.virtualcampfire.co.uk/songs/Freedom%20is%20Coming%20-%20Fenwood%20Glee%2014.mp3 -O Freedom\_Is\_Coming\__\_Fenwood\_Glee\_14.mp3
+fi
+#Freedom\_Is\_Coming\__\_In\_The\_Crypt\_Nov\_14.mp3
+if [ ! -f "Freedom\_Is\_Coming\__\_In\_The\_Crypt\_Nov\_14.mp3" ]
+ then
+  wget http://www.virtualcampfire.co.uk/songs/Freedom%20is%20Coming%20-%20in%20the%20crypt%20Nov%2014.mp3 -O Freedom\_Is\_Coming\__\_In\_The\_Crypt\_Nov\_14.mp3
+fi
 #Freedom\_Is\_Coming.mp3
 if [ ! -f "Freedom\_Is\_Coming.mp3" ]
  then
   wget http://www.virtualcampfire.co.uk/songs/Freedom%20is%20Coming.mp3 -O Freedom\_Is\_Coming.mp3
 fi
+#Freedom\_Is\_Coming\_Part\_A\__\_Fenwood\_Glee\_14.mp3
+if [ ! -f "Freedom\_Is\_Coming\_Part\_A\__\_Fenwood\_Glee\_14.mp3" ]
+ then
+  wget http://www.virtualcampfire.co.uk/songs/Freedom%20is%20Coming%20part%20A%20-%20Fenwood%20Glee%2014.mp3 -O Freedom\_Is\_Coming\_Part\_A\__\_Fenwood\_Glee\_14.mp3
+fi
+#Freedom\_Is\_Coming\_Part\_B\__\_Fenwood\_Glee\_14.mp3
+if [ ! -f "Freedom\_Is\_Coming\_Part\_B\__\_Fenwood\_Glee\_14.mp3" ]
+ then
+  wget http://www.virtualcampfire.co.uk/songs/Freedom%20is%20Coming%20part%20B%20-%20Fenwood%20Glee%2014.mp3 -O Freedom\_Is\_Coming\_Part\_B\__\_Fenwood\_Glee\_14.mp3
+fi
+#Freedom\_Is\_Coming\_Part\_C\__\_Fenwood\_Glee\_14.mp3
+if [ ! -f "Freedom\_Is\_Coming\_Part\_C\__\_Fenwood\_Glee\_14.mp3" ]
+ then
+  wget http://www.virtualcampfire.co.uk/songs/Freedom%20is%20Coming%20Part%20C%20-%20Fenwood%20Glee%2014.mp3 -O Freedom\_Is\_Coming\_Part\_C\__\_Fenwood\_Glee\_14.mp3
+fi
+#Freedom\_Is\_Coming\_Part\_D\__\_Fenwood\_Glee\_14.mp3
+if [ ! -f "Freedom\_Is\_Coming\_Part\_D\__\_Fenwood\_Glee\_14.mp3" ]
+ then
+  wget http://www.virtualcampfire.co.uk/songs/Freedom%20is%20Coming%20part%20D%20-%20Fenwood%20Glee%2014.mp3 -O Freedom\_Is\_Coming\_Part\_D\__\_Fenwood\_Glee\_14.mp3
+fi
 #Freedom\_Is\_Coming\_Parts.mp3
 if [ ! -f "Freedom\_Is\_Coming\_Parts.mp3" ]
  then
   wget http://www.virtualcampfire.co.uk/songs/Freedom%20is%20Coming%20Parts.mp3 -O Freedom\_Is\_Coming\_Parts.mp3
+fi
+#Freedom\_Train\__\_Stable\_Singers.mp3
+if [ ! -f "Freedom\_Train\__\_Stable\_Singers.mp3" ]
+ then
+  wget http://www.virtualcampfire.co.uk/songs/freedom%20train%20-%20stable%20singers.mp3 -O Freedom\_Train\__\_Stable\_Singers.mp3
 fi
 #Freight\_Train.mp3
 if [ ! -f "Freight\_Train.mp3" ]
@@ -603,6 +743,16 @@ fi
 if [ ! -f "Froggy\_Went\_A\_Courtin.mp3" ]
  then
   wget http://www.virtualcampfire.co.uk/songs/Froggy%20Went%20a%20Courtin.mp3 -O Froggy\_Went\_A\_Courtin.mp3
+fi
+#Gardens\__\_In\_The\_Crypt\_Nov\_14.mp3
+if [ ! -f "Gardens\__\_In\_The\_Crypt\_Nov\_14.mp3" ]
+ then
+  wget http://www.virtualcampfire.co.uk/songs/Gardens%20-%20in%20the%20crypt%20Nov%2014.mp3 -O Gardens\__\_In\_The\_Crypt\_Nov\_14.mp3
+fi
+#Get\_A\_Little\_Closer\_To\_The\_Mill\__\_Cairi\_Teaches\__\_Stable\_Singers.mp3
+if [ ! -f "Get\_A\_Little\_Closer\_To\_The\_Mill\__\_Cairi\_Teaches\__\_Stable\_Singers.mp3" ]
+ then
+  wget http://www.virtualcampfire.co.uk/songs/get%20a%20little%20closer%20to%20the%20mill%20-%20cairi%20teaches%20-%20stable%20singers.mp3 -O Get\_A\_Little\_Closer\_To\_The\_Mill\__\_Cairi\_Teaches\__\_Stable\_Singers.mp3
 fi
 #Ghost\_Of\_John.mp3
 if [ ! -f "Ghost\_Of\_John.mp3" ]
@@ -649,6 +799,11 @@ if [ ! -f "Goodnight\_Irene\__\_In\_The\_Crypt.mp3" ]
  then
   wget http://www.virtualcampfire.co.uk/songs/Goodnight%20Irene%20-%20in%20the%20crypt.mp3 -O Goodnight\_Irene\__\_In\_The\_Crypt.mp3
 fi
+#Goodnight\_Irene\__\_Stable\_Singers.mp3
+if [ ! -f "Goodnight\_Irene\__\_Stable\_Singers.mp3" ]
+ then
+  wget http://www.virtualcampfire.co.uk/songs/goodnight%20irene%20-%20stable%20singers.mp3 -O Goodnight\_Irene\__\_Stable\_Singers.mp3
+fi
 #Good\_Times.mp3
 if [ ! -f "Good\_Times.mp3" ]
  then
@@ -679,6 +834,11 @@ if [ ! -f "Greenland\_Whaler\_Snippet.mp3" ]
  then
   wget http://www.virtualcampfire.co.uk/songs/Greenland%20Whaler%20snippet.mp3 -O Greenland\_Whaler\_Snippet.mp3
 fi
+#Greenwood\_Tree\__\_Stable\_Singers.mp3
+if [ ! -f "Greenwood\_Tree\__\_Stable\_Singers.mp3" ]
+ then
+  wget http://www.virtualcampfire.co.uk/songs/greenwood%20tree%20-%20stable%20singers.mp3 -O Greenwood\_Tree\__\_Stable\_Singers.mp3
+fi
 #Grey\_Funnel\_Line\_\(Messy\).mp3
 if [ ! -f "Grey\_Funnel\_Line\_\(Messy\).mp3" ]
  then
@@ -693,6 +853,11 @@ fi
 if [ ! -f "Grey\_Funnel\_Line.mp3" ]
  then
   wget http://www.virtualcampfire.co.uk/songs/Grey%20Funnel%20Line.mp3 -O Grey\_Funnel\_Line.mp3
+fi
+#Grey\_Goose\_\(Pete\_Trewin\)_\_In\_The\_Crypt\_Nov\_13.mp3
+if [ ! -f "Grey\_Goose\_\(Pete\_Trewin\)_\_In\_The\_Crypt\_Nov\_13.mp3" ]
+ then
+  wget http://www.virtualcampfire.co.uk/songs/Grey%20Goose%20%28Pete%20Trewin%29-%20in%20the%20crypt%20Nov%2013.mp3 -O Grey\_Goose\_\(Pete\_Trewin\)_\_In\_The\_Crypt\_Nov\_13.mp3
 fi
 #Hal_And_Tow.mp3
 if [ ! -f "Hal_And_Tow.mp3" ]
@@ -739,20 +904,50 @@ if [ ! -f "Hesitation\_Blues.mp3" ]
  then
   wget http://www.virtualcampfire.co.uk/songs/Hesitation%20Blues.mp3 -O Hesitation\_Blues.mp3
 fi
+#Hey\_Hey\__\_Fenwood\_Glee\_14.mp3
+if [ ! -f "Hey\_Hey\__\_Fenwood\_Glee\_14.mp3" ]
+ then
+  wget http://www.virtualcampfire.co.uk/songs/Hey%20Hey%20-%20Fenwood%20Glee%2014.mp3 -O Hey\_Hey\__\_Fenwood\_Glee\_14.mp3
+fi
 #Hey\_Ho\_Anybody\_Home.mp3
 if [ ! -f "Hey\_Ho\_Anybody\_Home.mp3" ]
  then
   wget http://www.virtualcampfire.co.uk/songs/Hey%20Ho%20Anybody%20Home.mp3 -O Hey\_Ho\_Anybody\_Home.mp3
+fi
+#Hey\_Ho\_For\_A\_Bottle\_Of\_Rum\__\_Fenwood\_Glee\_14.mp3
+if [ ! -f "Hey\_Ho\_For\_A\_Bottle\_Of\_Rum\__\_Fenwood\_Glee\_14.mp3" ]
+ then
+  wget http://www.virtualcampfire.co.uk/songs/Hey%20Ho%20For%20a%20Bottle%20of%20Rum%20-%20Fenwood%20Glee%2014.mp3 -O Hey\_Ho\_For\_A\_Bottle\_Of\_Rum\__\_Fenwood\_Glee\_14.mp3
 fi
 #Hill\_And\_Gully\_Rider.mp3
 if [ ! -f "Hill\_And\_Gully\_Rider.mp3" ]
  then
   wget http://www.virtualcampfire.co.uk/songs/Hill%20and%20Gully%20Rider.mp3 -O Hill\_And\_Gully\_Rider.mp3
 fi
+#Holly\'S\_Jazzy\_Warm\_Up\__\_Stable\_Singers.mp3
+if [ ! -f "Holly\'S\_Jazzy\_Warm\_Up\__\_Stable\_Singers.mp3" ]
+ then
+  wget http://www.virtualcampfire.co.uk/songs/holly\'s%20jazzy%20warm%20up%20-%20stable%20singers.mp3 -O Holly\'S\_Jazzy\_Warm\_Up\__\_Stable\_Singers.mp3
+fi
+#Home\_To\_The\_Motherland\__\_\(Oasis\_Glee\_14\).mp3
+if [ ! -f "Home\_To\_The\_Motherland\__\_\(Oasis\_Glee\_14\).mp3" ]
+ then
+  wget http://www.virtualcampfire.co.uk/songs/Home%20to%20the%20Motherland%20-%20%28oasis%20glee%2014%29.mp3 -O Home\_To\_The\_Motherland\__\_\(Oasis\_Glee\_14\).mp3
+fi
 #Home\_To\_The\_Motherland.mp3
 if [ ! -f "Home\_To\_The\_Motherland.mp3" ]
  then
   wget http://www.virtualcampfire.co.uk/songs/Home%20to%20the%20Motherland.mp3 -O Home\_To\_The\_Motherland.mp3
+fi
+#How\_Sweet\_The\_Sound\_Was\_In\_The\_Night\__\_Stable\_Singers.mp3
+if [ ! -f "How\_Sweet\_The\_Sound\_Was\_In\_The\_Night\__\_Stable\_Singers.mp3" ]
+ then
+  wget http://www.virtualcampfire.co.uk/songs/how%20sweet%20the%20sound%20was%20in%20the%20night%20-%20stable%20singers.mp3 -O How\_Sweet\_The\_Sound\_Was\_In\_The\_Night\__\_Stable\_Singers.mp3
+fi
+#How\_Sweet\_The\_Sound\_Was\_In\_The\_Night\_Learning\__\__\_Stable\_Singers.mp3
+if [ ! -f "How\_Sweet\_The\_Sound\_Was\_In\_The\_Night\_Learning\__\__\_Stable\_Singers.mp3" ]
+ then
+  wget http://www.virtualcampfire.co.uk/songs/how%20sweet%20the%20sound%20was%20in%20the%20night%20learning%20-%20-%20stable%20singers.mp3 -O How\_Sweet\_The\_Sound\_Was\_In\_The\_Night\_Learning\__\__\_Stable\_Singers.mp3
 fi
 #Humba.mp3
 if [ ! -f "Humba.mp3" ]
@@ -763,6 +958,11 @@ fi
 if [ ! -f "Hush\_A\_Bye.mp3" ]
  then
   wget http://www.virtualcampfire.co.uk/songs/hush%20a%20bye.mp3 -O Hush\_A\_Bye.mp3
+fi
+#I\'Ll\_Fly\_Away\__\_Stable\_Singers.mp3
+if [ ! -f "I\'Ll\_Fly\_Away\__\_Stable\_Singers.mp3" ]
+ then
+  wget http://www.virtualcampfire.co.uk/songs/i\'ll%20fly%20away%20-%20stable%20singers.mp3 -O I\'Ll\_Fly\_Away\__\_Stable\_Singers.mp3
 fi
 #I\'Ll\_Fly\_Away.mp3
 if [ ! -f "I\'Ll\_Fly\_Away.mp3" ]
@@ -824,6 +1024,11 @@ if [ ! -f "I\_Like\_To\_Rise.mp3" ]
  then
   wget http://www.virtualcampfire.co.uk/songs/i%20like%20to%20rise.mp3 -O I\_Like\_To\_Rise.mp3
 fi
+#Illi\_Alli\_Ik\_Bom\__\_It\'S\_Hard\_Bringing\_Up\_Twins\__\_Stable\_Singers.mp3
+if [ ! -f "Illi\_Alli\_Ik\_Bom\__\_It\'S\_Hard\_Bringing\_Up\_Twins\__\_Stable\_Singers.mp3" ]
+ then
+  wget http://www.virtualcampfire.co.uk/songs/illi%20alli%20ik%20bom%20-%20it\'s%20hard%20bringing%20up%20twins%20-%20stable%20singers.mp3 -O Illi\_Alli\_Ik\_Bom\__\_It\'S\_Hard\_Bringing\_Up\_Twins\__\_Stable\_Singers.mp3
+fi
 #Indonga\_Seh\_Jericho\_\(Parts\).mp3
 if [ ! -f "Indonga\_Seh\_Jericho\_\(Parts\).mp3" ]
  then
@@ -849,15 +1054,30 @@ if [ ! -f "It\_Ain\'T\_Me\_You\'Re\_Looking\_For.mp3" ]
  then
   wget http://www.virtualcampfire.co.uk/songs/IT%20AIN\'T%20ME%20YOU\'RE%20LOOKING%20FOR.mp3 -O It\_Ain\'T\_Me\_You\'Re\_Looking\_For.mp3
 fi
+#I\_Thought\_I\_Could\_Tell\_You\__\_In\_The\_Crypt.mp3
+if [ ! -f "I\_Thought\_I\_Could\_Tell\_You\__\_In\_The\_Crypt.mp3" ]
+ then
+  wget http://www.virtualcampfire.co.uk/songs/I%20thought%20I%20could%20tell%20you%20-%20in%20the%20crypt.mp3 -O I\_Thought\_I\_Could\_Tell\_You\__\_In\_The\_Crypt.mp3
+fi
 #I\_Will\_Rock\_My\_Heart\_\(Snippet\).mp3
 if [ ! -f "I\_Will\_Rock\_My\_Heart\_\(Snippet\).mp3" ]
  then
   wget http://www.virtualcampfire.co.uk/songs/I%20Will%20Rock%20My%20Heart%20%28snippet%29.mp3 -O I\_Will\_Rock\_My\_Heart\_\(Snippet\).mp3
 fi
+#I\_Will\_Rock\_My\_Heart\__\_Fenwood\_Glee\_14.mp3
+if [ ! -f "I\_Will\_Rock\_My\_Heart\__\_Fenwood\_Glee\_14.mp3" ]
+ then
+  wget http://www.virtualcampfire.co.uk/songs/I%20Will%20Rock%20My%20Heart%20-%20Fenwood%20Glee%2014.mp3 -O I\_Will\_Rock\_My\_Heart\__\_Fenwood\_Glee\_14.mp3
+fi
 #I\_Will\_Rock\_My\_Heart.mp3
 if [ ! -f "I\_Will\_Rock\_My\_Heart.mp3" ]
  then
   wget http://www.virtualcampfire.co.uk/songs/I%20Will%20Rock%20My%20Heart.mp3 -O I\_Will\_Rock\_My\_Heart.mp3
+fi
+#I\_Will\_Rock\_My\_Heart\_Snippit\__\_Stable\_Singers.mp3
+if [ ! -f "I\_Will\_Rock\_My\_Heart\_Snippit\__\_Stable\_Singers.mp3" ]
+ then
+  wget http://www.virtualcampfire.co.uk/songs/I%20will%20rock%20my%20heart%20snippit%20-%20stable%20singers.mp3 -O I\_Will\_Rock\_My\_Heart\_Snippit\__\_Stable\_Singers.mp3
 fi
 #I\_Wonder\_If\_I\'M\_Growing.mp3
 if [ ! -f "I\_Wonder\_If\_I\'M\_Growing.mp3" ]
@@ -878,6 +1098,11 @@ fi
 if [ ! -f "Jean\_Harlow.mp3" ]
  then
   wget http://www.virtualcampfire.co.uk/songs/Jean%20Harlow.mp3 -O Jean\_Harlow.mp3
+fi
+#Jerusalem\_Moan\__\_Stable\_Singers.mp3
+if [ ! -f "Jerusalem\_Moan\__\_Stable\_Singers.mp3" ]
+ then
+  wget http://www.virtualcampfire.co.uk/songs/jerusalem%20moan%20-%20stable%20singers.mp3 -O Jerusalem\_Moan\__\_Stable\_Singers.mp3
 fi
 #Jesus\_My\_Secret.mp3
 if [ ! -f "Jesus\_My\_Secret.mp3" ]
@@ -903,6 +1128,11 @@ fi
 if [ ! -f "Jock\_Stewart.mp3" ]
  then
   wget http://www.virtualcampfire.co.uk/songs/Jock%20Stewart.mp3 -O Jock\_Stewart.mp3
+fi
+#John\_Hamilton\__\_Stable\_Singers.mp3
+if [ ! -f "John\_Hamilton\__\_Stable\_Singers.mp3" ]
+ then
+  wget http://www.virtualcampfire.co.uk/songs/john%20hamilton%20-%20stable%20singers.mp3 -O John\_Hamilton\__\_Stable\_Singers.mp3
 fi
 #John\_John\_Where\_Have\_You\_Been\_All\_Night.mp3
 if [ ! -f "John\_John\_Where\_Have\_You\_Been\_All\_Night.mp3" ]
@@ -979,6 +1209,11 @@ if [ ! -f "Lady\_And\_The\_Crocodile.mp3" ]
  then
   wget http://www.virtualcampfire.co.uk/songs/Lady%20and%20the%20Crocodile.mp3 -O Lady\_And\_The\_Crocodile.mp3
 fi
+#Larks\__\_Stable\_Singers.mp3
+if [ ! -f "Larks\__\_Stable\_Singers.mp3" ]
+ then
+  wget http://www.virtualcampfire.co.uk/songs/larks%20-%20stable%20singers.mp3 -O Larks\__\_Stable\_Singers.mp3
+fi
 #Larks\_They\_Sang\_Melodious\_\(Barnyard\).mp3
 if [ ! -f "Larks\_They\_Sang\_Melodious\_\(Barnyard\).mp3" ]
  then
@@ -999,6 +1234,11 @@ if [ ! -f "Lay\_Down.mp3" ]
  then
   wget http://www.virtualcampfire.co.uk/songs/Lay%20Down.mp3 -O Lay\_Down.mp3
 fi
+#Learning\_John\_Hamilton\__\_Stable\_Singers.mp3
+if [ ! -f "Learning\_John\_Hamilton\__\_Stable\_Singers.mp3" ]
+ then
+  wget http://www.virtualcampfire.co.uk/songs/learning%20john%20hamilton%20-%20stable%20singers.mp3 -O Learning\_John\_Hamilton\__\_Stable\_Singers.mp3
+fi
 #Leave\_Her\_Johnny\_Leave\_Her\_\(Putney\_Allstars\).mp3
 if [ ! -f "Leave\_Her\_Johnny\_Leave\_Her\_\(Putney\_Allstars\).mp3" ]
  then
@@ -1009,15 +1249,50 @@ if [ ! -f "Leave\_Her\_Johnny\_Leave\_Her.mp3" ]
  then
   wget http://www.virtualcampfire.co.uk/songs/Leave%20Her%20Johnny%20Leave%20Her.mp3 -O Leave\_Her\_Johnny\_Leave\_Her.mp3
 fi
+#Leave\_Me\_If\_You\_Want\_To\__\_Stable\_Singers.mp3
+if [ ! -f "Leave\_Me\_If\_You\_Want\_To\__\_Stable\_Singers.mp3" ]
+ then
+  wget http://www.virtualcampfire.co.uk/songs/leave%20me%20if%20you%20want%20to%20-%20stable%20singers.mp3 -O Leave\_Me\_If\_You\_Want\_To\__\_Stable\_Singers.mp3
+fi
 #Leaves_Of_Life.mp3
 if [ ! -f "Leaves_Of_Life.mp3" ]
  then
   wget http://www.virtualcampfire.co.uk/songs/Leaves_of_Life.mp3 -O Leaves_Of_Life.mp3
 fi
+#Leaving\_Of\_Liverpool\__\_In\_The\_Crypt\_Nov\_14.mp3
+if [ ! -f "Leaving\_Of\_Liverpool\__\_In\_The\_Crypt\_Nov\_14.mp3" ]
+ then
+  wget http://www.virtualcampfire.co.uk/songs/Leaving%20of%20Liverpool%20-%20in%20the%20crypt%20Nov%2014.mp3 -O Leaving\_Of\_Liverpool\__\_In\_The\_Crypt\_Nov\_14.mp3
+fi
+#Let\_You\_Little\_Light\_Shine\_Snippit\__\_Stable\_Singers.mp3
+if [ ! -f "Let\_You\_Little\_Light\_Shine\_Snippit\__\_Stable\_Singers.mp3" ]
+ then
+  wget http://www.virtualcampfire.co.uk/songs/let%20you%20little%20light%20shine%20snippit%20-%20stable%20singers.mp3 -O Let\_You\_Little\_Light\_Shine\_Snippit\__\_Stable\_Singers.mp3
+fi
 #Let_Your_Little_Light_Shine.mp3
 if [ ! -f "Let_Your_Little_Light_Shine.mp3" ]
  then
   wget http://www.virtualcampfire.co.uk/songs/let_your_little_light_shine.mp3 -O Let_Your_Little_Light_Shine.mp3
+fi
+#Lie\_La\_La\_Lie\_\(Jewish\_Mourning\_Song\)\__\_Learning\__\_Stable\_Singers.mp3
+if [ ! -f "Lie\_La\_La\_Lie\_\(Jewish\_Mourning\_Song\)\__\_Learning\__\_Stable\_Singers.mp3" ]
+ then
+  wget http://www.virtualcampfire.co.uk/songs/lie%20la%20la%20lie%20%28jewish%20mourning%20song%29%20-%20learning%20-%20stable%20singers.mp3 -O Lie\_La\_La\_Lie\_\(Jewish\_Mourning\_Song\)\__\_Learning\__\_Stable\_Singers.mp3
+fi
+#Lie\_La\_La\_Lie\_In\_A\_Round\__\_Stable\_Singers.mp3
+if [ ! -f "Lie\_La\_La\_Lie\_In\_A\_Round\__\_Stable\_Singers.mp3" ]
+ then
+  wget http://www.virtualcampfire.co.uk/songs/lie%20la%20la%20lie%20in%20a%20round%20-%20stable%20singers.mp3 -O Lie\_La\_La\_Lie\_In\_A\_Round\__\_Stable\_Singers.mp3
+fi
+#Lift\_Up\_Your\_Hands\_First\_Attempt\__\_Stable\_Singers.mp3
+if [ ! -f "Lift\_Up\_Your\_Hands\_First\_Attempt\__\_Stable\_Singers.mp3" ]
+ then
+  wget http://www.virtualcampfire.co.uk/songs/lift%20up%20your%20hands%20first%20attempt%20-%20stable%20singers.mp3 -O Lift\_Up\_Your\_Hands\_First\_Attempt\__\_Stable\_Singers.mp3
+fi
+#Lift\_Up\_Your\_Hands\_Parts\__\_Stable\_Singers.mp3
+if [ ! -f "Lift\_Up\_Your\_Hands\_Parts\__\_Stable\_Singers.mp3" ]
+ then
+  wget http://www.virtualcampfire.co.uk/songs/lift%20up%20your%20hands%20parts%20-%20stable%20singers.mp3 -O Lift\_Up\_Your\_Hands\_Parts\__\_Stable\_Singers.mp3
 fi
 #Lift_Up_Your_Hands.mp3
 if [ ! -f "Lift_Up_Your_Hands.mp3" ]
@@ -1049,6 +1324,11 @@ if [ ! -f "Little\_Engines.mp3" ]
  then
   wget http://www.virtualcampfire.co.uk/songs/Little%20Engines.mp3 -O Little\_Engines.mp3
 fi
+#Littlest\_Birds\__\_Stable\_Singers.mp3
+if [ ! -f "Littlest\_Birds\__\_Stable\_Singers.mp3" ]
+ then
+  wget http://www.virtualcampfire.co.uk/songs/littlest%20birds%20-%20stable%20singers.mp3 -O Littlest\_Birds\__\_Stable\_Singers.mp3
+fi
 #Liverpool\_St\_Station\_1.mp3
 if [ ! -f "Liverpool\_St\_Station\_1.mp3" ]
  then
@@ -1063,6 +1343,11 @@ fi
 if [ ! -f "Looking\_Tward\_Heaven\_06.mp3" ]
  then
   wget http://www.virtualcampfire.co.uk/songs/looking%20tward%20heaven%2006.mp3 -O Looking\_Tward\_Heaven\_06.mp3
+fi
+#Lord\_Franklin_\_Stable\_Singers.mp3
+if [ ! -f "Lord\_Franklin_\_Stable\_Singers.mp3" ]
+ then
+  wget http://www.virtualcampfire.co.uk/songs/lord%20franklin-%20stable%20singers.mp3 -O Lord\_Franklin_\_Stable\_Singers.mp3
 fi
 #Lord\_Franklin.mp3
 if [ ! -f "Lord\_Franklin.mp3" ]
@@ -1099,6 +1384,11 @@ if [ ! -f "Magpies\_Nest.mp3" ]
  then
   wget http://www.virtualcampfire.co.uk/songs/Magpies%20Nest.mp3 -O Magpies\_Nest.mp3
 fi
+#Mairi\'S_Wedding.mp3
+if [ ! -f "Mairi\'S_Wedding.mp3" ]
+ then
+  wget http://www.virtualcampfire.co.uk/songs/Mairi\'s_Wedding.mp3 -O Mairi\'S_Wedding.mp3
+fi
 #Maleezway.mp3
 if [ ! -f "Maleezway.mp3" ]
  then
@@ -1124,6 +1414,11 @@ if [ ! -f "Mary\_Don\'T\_You\_Weep.mp3" ]
  then
   wget http://www.virtualcampfire.co.uk/songs/Mary%20Don\'t%20You%20Weep.mp3 -O Mary\_Don\'T\_You\_Weep.mp3
 fi
+#Mary\_Dont\_You\_Weep\__\_\(Oasis\_Glee\_14\).mp3
+if [ ! -f "Mary\_Dont\_You\_Weep\__\_\(Oasis\_Glee\_14\).mp3" ]
+ then
+  wget http://www.virtualcampfire.co.uk/songs/Mary%20dont%20you%20weep%20-%20%28oasis%20glee%2014%29.mp3 -O Mary\_Dont\_You\_Weep\__\_\(Oasis\_Glee\_14\).mp3
+fi
 #Mary\_Ellen\_Carter\_Ffs.mp3
 if [ ! -f "Mary\_Ellen\_Carter\_Ffs.mp3" ]
  then
@@ -1144,10 +1439,20 @@ if [ ! -f "May\_The\_Circle\_Be\_Unbroken\_\(Band\).mp3" ]
  then
   wget http://www.virtualcampfire.co.uk/songs/May%20the%20Circle%20Be%20Unbroken%20%28band%29.mp3 -O May\_The\_Circle\_Be\_Unbroken\_\(Band\).mp3
 fi
+#May\_The\_Circle\_Be\_Unbroken\__\_In\_Memory\_Of\_Seth\_Dixon\__\_Dec\_14.mp3
+if [ ! -f "May\_The\_Circle\_Be\_Unbroken\__\_In\_Memory\_Of\_Seth\_Dixon\__\_Dec\_14.mp3" ]
+ then
+  wget http://www.virtualcampfire.co.uk/songs/May%20the%20Circle%20Be%20Unbroken%20-%20in%20memory%20of%20Seth%20Dixon%20-%20Dec%2014.mp3 -O May\_The\_Circle\_Be\_Unbroken\__\_In\_Memory\_Of\_Seth\_Dixon\__\_Dec\_14.mp3
+fi
 #Maythe\_Circle\_Be\_Unbroken.mp3
 if [ ! -f "Maythe\_Circle\_Be\_Unbroken.mp3" ]
  then
   wget http://www.virtualcampfire.co.uk/songs/MayThe%20Circle%20Be%20Unbroken.mp3 -O Maythe\_Circle\_Be\_Unbroken.mp3
+fi
+#Medley!\__\_\(Oasis\_Glee\_14\).mp3
+if [ ! -f "Medley!\__\_\(Oasis\_Glee\_14\).mp3" ]
+ then
+  wget http://www.virtualcampfire.co.uk/songs/Medley!%20-%20%28oasis%20glee%2014%29.mp3 -O Medley!\__\_\(Oasis\_Glee\_14\).mp3
 fi
 #Mercedes\_Benz.mp3
 if [ ! -f "Mercedes\_Benz.mp3" ]
@@ -1184,6 +1489,11 @@ if [ ! -f "Moccasin\_Mile.mp3" ]
  then
   wget http://www.virtualcampfire.co.uk/songs/Moccasin%20Mile.mp3 -O Moccasin\_Mile.mp3
 fi
+#Mole_In_A_Hole.mp3
+if [ ! -f "Mole_In_A_Hole.mp3" ]
+ then
+  wget http://www.virtualcampfire.co.uk/songs/Mole_in_a_hole.mp3 -O Mole_In_A_Hole.mp3
+fi
 #Moonganga\__\_In\_The\_Crypt.mp3
 if [ ! -f "Moonganga\__\_In\_The\_Crypt.mp3" ]
  then
@@ -1208,6 +1518,11 @@ fi
 if [ ! -f "Move\_Along.mp3" ]
  then
   wget http://www.virtualcampfire.co.uk/songs/Move%20Along.mp3 -O Move\_Along.mp3
+fi
+#Muddy_Camp_Song.mp3
+if [ ! -f "Muddy_Camp_Song.mp3" ]
+ then
+  wget http://www.virtualcampfire.co.uk/songs/Muddy_camp_song.mp3 -O Muddy_Camp_Song.mp3
 fi
 #Mushrooms.mp3
 if [ ! -f "Mushrooms.mp3" ]
@@ -1264,6 +1579,11 @@ if [ ! -f "Nightingale.mp3" ]
  then
   wget http://www.virtualcampfire.co.uk/songs/Nightingale.mp3 -O Nightingale.mp3
 fi
+#Nisa\_Nisa\_Nisa\__\_In\_The\_Crypt\_Dec\_14.mp3
+if [ ! -f "Nisa\_Nisa\_Nisa\__\_In\_The\_Crypt\_Dec\_14.mp3" ]
+ then
+  wget http://www.virtualcampfire.co.uk/songs/Nisa%20nisa%20nisa%20-%20in%20the%20crypt%20Dec%2014.mp3 -O Nisa\_Nisa\_Nisa\__\_In\_The\_Crypt\_Dec\_14.mp3
+fi
 #Now\_I\_Walk\_In\_Beauty.mp3
 if [ ! -f "Now\_I\_Walk\_In\_Beauty.mp3" ]
  then
@@ -1288,6 +1608,11 @@ fi
 if [ ! -f "Oak\_And\_Ash\_And\_Thorn\_Round\__\_Stable\_Singers.mp3" ]
  then
   wget http://www.virtualcampfire.co.uk/songs/oak%20and%20ash%20and%20thorn%20round%20-%20stable%20singers.mp3 -O Oak\_And\_Ash\_And\_Thorn\_Round\__\_Stable\_Singers.mp3
+fi
+#Oh\_Hush\_Thee\_My\_Love\__\_Stable\_Singers.mp3
+if [ ! -f "Oh\_Hush\_Thee\_My\_Love\__\_Stable\_Singers.mp3" ]
+ then
+  wget http://www.virtualcampfire.co.uk/songs/oh%20hush%20thee%20my%20love%20-%20stable%20singers.mp3 -O Oh\_Hush\_Thee\_My\_Love\__\_Stable\_Singers.mp3
 fi
 #Oh\_Lala\_Lay.mp3
 if [ ! -f "Oh\_Lala\_Lay.mp3" ]
@@ -1354,6 +1679,11 @@ if [ ! -f "Ooh\_Ey\_Poochada.mp3" ]
  then
   wget http://www.virtualcampfire.co.uk/songs/Ooh%20Ey%20Poochada.mp3 -O Ooh\_Ey\_Poochada.mp3
 fi
+#Ooh\_La\_La\_Lay,\_Another\_Evening\_Fades\_Away\__\_Stable\_Singers.mp3
+if [ ! -f "Ooh\_La\_La\_Lay,\_Another\_Evening\_Fades\_Away\__\_Stable\_Singers.mp3" ]
+ then
+  wget http://www.virtualcampfire.co.uk/songs/ooh%20la%20la%20lay,%20another%20evening%20fades%20away%20-%20stable%20singers.mp3 -O Ooh\_La\_La\_Lay,\_Another\_Evening\_Fades\_Away\__\_Stable\_Singers.mp3
+fi
 #Orchestra_Song.mp3
 if [ ! -f "Orchestra_Song.mp3" ]
  then
@@ -1374,6 +1704,11 @@ if [ ! -f "Orlando\'S\_Pigs\__\_Stable\_Singers.mp3" ]
  then
   wget http://www.virtualcampfire.co.uk/songs/orlando\'s%20pigs%20-%20stable%20singers.mp3 -O Orlando\'S\_Pigs\__\_Stable\_Singers.mp3
 fi
+#Pace\_Egging\_Song\__\_Stable\_Singers.mp3
+if [ ! -f "Pace\_Egging\_Song\__\_Stable\_Singers.mp3" ]
+ then
+  wget http://www.virtualcampfire.co.uk/songs/pace%20egging%20song%20-%20stable%20singers.mp3 -O Pace\_Egging\_Song\__\_Stable\_Singers.mp3
+fi
 #Pace_Egging_Song.mp3
 if [ ! -f "Pace_Egging_Song.mp3" ]
  then
@@ -1393,6 +1728,31 @@ fi
 if [ ! -f "Paddy_Doyle\'S_Boots.mp3" ]
  then
   wget http://www.virtualcampfire.co.uk/songs/paddy_doyle\'s_boots.mp3 -O Paddy_Doyle\'S_Boots.mp3
+fi
+#Parting\_Glass\__\_Learning\_Middle\_And\_Bit\_Of\_Bottom\_Part\__\_Stable\_Singers.mp3
+if [ ! -f "Parting\_Glass\__\_Learning\_Middle\_And\_Bit\_Of\_Bottom\_Part\__\_Stable\_Singers.mp3" ]
+ then
+  wget http://www.virtualcampfire.co.uk/songs/parting%20glass%20-%20learning%20middle%20and%20bit%20of%20bottom%20part%20-%20stable%20singers.mp3 -O Parting\_Glass\__\_Learning\_Middle\_And\_Bit\_Of\_Bottom\_Part\__\_Stable\_Singers.mp3
+fi
+#Parting\_Glass\__\_Meg\_Teaches\_Low\_Part\__\_Stable\_Singers.mp3
+if [ ! -f "Parting\_Glass\__\_Meg\_Teaches\_Low\_Part\__\_Stable\_Singers.mp3" ]
+ then
+  wget http://www.virtualcampfire.co.uk/songs/parting%20glass%20-%20meg%20teaches%20low%20part%20-%20stable%20singers.mp3 -O Parting\_Glass\__\_Meg\_Teaches\_Low\_Part\__\_Stable\_Singers.mp3
+fi
+#Parting\_Glass\__\_Rosie\_Starts\_To\_Teach\_Parts\_Then\_None\_Can\_Resist\__\_Stable\_Singers.mp3
+if [ ! -f "Parting\_Glass\__\_Rosie\_Starts\_To\_Teach\_Parts\_Then\_None\_Can\_Resist\__\_Stable\_Singers.mp3" ]
+ then
+  wget http://www.virtualcampfire.co.uk/songs/parting%20glass%20-%20rosie%20starts%20to%20teach%20parts%20then%20none%20can%20resist%20-%20stable%20singers.mp3 -O Parting\_Glass\__\_Rosie\_Starts\_To\_Teach\_Parts\_Then\_None\_Can\_Resist\__\_Stable\_Singers.mp3
+fi
+#Parting\_Glass\__\_Rosie\_Teaches\_Jolly\_High\_Part\__\_Stable\_Singers.mp3
+if [ ! -f "Parting\_Glass\__\_Rosie\_Teaches\_Jolly\_High\_Part\__\_Stable\_Singers.mp3" ]
+ then
+  wget http://www.virtualcampfire.co.uk/songs/parting%20glass%20-%20rosie%20teaches%20jolly%20high%20part%20-%20stable%20singers.mp3 -O Parting\_Glass\__\_Rosie\_Teaches\_Jolly\_High\_Part\__\_Stable\_Singers.mp3
+fi
+#Parting\_Glass\__\_Stable\_Singers.mp3
+if [ ! -f "Parting\_Glass\__\_Stable\_Singers.mp3" ]
+ then
+  wget http://www.virtualcampfire.co.uk/songs/parting%20glass%20-%20stable%20singers.mp3 -O Parting\_Glass\__\_Stable\_Singers.mp3
 fi
 #Peace\_In\_The\_Valley.mp3
 if [ ! -f "Peace\_In\_The\_Valley.mp3" ]
@@ -1424,6 +1784,11 @@ if [ ! -f "Poll\_Tax\_Song.mp3" ]
  then
   wget http://www.virtualcampfire.co.uk/songs/Poll%20Tax%20Song.mp3 -O Poll\_Tax\_Song.mp3
 fi
+#Poll_Tax_Song.mp3
+if [ ! -f "Poll_Tax_Song.mp3" ]
+ then
+  wget http://www.virtualcampfire.co.uk/songs/Poll_Tax_Song.mp3 -O Poll_Tax_Song.mp3
+fi
 #Poor\_Orphan\_Child.mp3
 if [ ! -f "Poor\_Orphan\_Child.mp3" ]
  then
@@ -1444,6 +1809,21 @@ if [ ! -f "Poor_Old_Man.mp3" ]
  then
   wget http://www.virtualcampfire.co.uk/songs/Poor_Old_Man.mp3 -O Poor_Old_Man.mp3
 fi
+#Povela.mp3
+if [ ! -f "Povela.mp3" ]
+ then
+  wget http://www.virtualcampfire.co.uk/songs/Povela.mp3 -O Povela.mp3
+fi
+#Povela_Track1.mp3
+if [ ! -f "Povela_Track1.mp3" ]
+ then
+  wget http://www.virtualcampfire.co.uk/songs/Povela_Track1.mp3 -O Povela_Track1.mp3
+fi
+#Povela_Track2.mp3
+if [ ! -f "Povela_Track2.mp3" ]
+ then
+  wget http://www.virtualcampfire.co.uk/songs/Povela_Track2.mp3 -O Povela_Track2.mp3
+fi
 #Praise\_His\_Holy\_Name\__\_In\_The\_Crypt.mp3
 if [ ! -f "Praise\_His\_Holy\_Name\__\_In\_The\_Crypt.mp3" ]
  then
@@ -1453,6 +1833,11 @@ fi
 if [ ! -f "Prickle_Eye_Bush.mp3" ]
  then
   wget http://www.virtualcampfire.co.uk/songs/prickle-eye-bush.mp3 -O Prickle_Eye_Bush.mp3
+fi
+#Prickle\_Eye\_Bush\_\(Version\)\__\_In\_The\_Crypt\_Dec\_14.mp3
+if [ ! -f "Prickle\_Eye\_Bush\_\(Version\)\__\_In\_The\_Crypt\_Dec\_14.mp3" ]
+ then
+  wget http://www.virtualcampfire.co.uk/songs/Prickle%20Eye%20Bush%20%28version%29%20-%20in%20the%20crypt%20Dec%2014.mp3 -O Prickle\_Eye\_Bush\_\(Version\)\__\_In\_The\_Crypt\_Dec\_14.mp3
 fi
 #Prickle\_Eye\_Bush.mp3
 if [ ! -f "Prickle\_Eye\_Bush.mp3" ]
@@ -1474,15 +1859,30 @@ if [ ! -f "Process\_Man01.mp3" ]
  then
   wget http://www.virtualcampfire.co.uk/songs/Process%20Man01.mp3 -O Process\_Man01.mp3
 fi
+#Raday\_Raday\__\_Fenwood\_Glee\_14.mp3
+if [ ! -f "Raday\_Raday\__\_Fenwood\_Glee\_14.mp3" ]
+ then
+  wget http://www.virtualcampfire.co.uk/songs/Raday%20Raday%20-%20Fenwood%20Glee%2014.mp3 -O Raday\_Raday\__\_Fenwood\_Glee\_14.mp3
+fi
 #Rainy\_Day.mp3
 if [ ! -f "Rainy\_Day.mp3" ]
  then
   wget http://www.virtualcampfire.co.uk/songs/Rainy%20Day.mp3 -O Rainy\_Day.mp3
 fi
+#Rambles\__\_Stable\_Singers.mp3
+if [ ! -f "Rambles\__\_Stable\_Singers.mp3" ]
+ then
+  wget http://www.virtualcampfire.co.uk/songs/rambles%20-%20stable%20singers.mp3 -O Rambles\__\_Stable\_Singers.mp3
+fi
 #Rawhide.mp3
 if [ ! -f "Rawhide.mp3" ]
  then
   wget http://www.virtualcampfire.co.uk/songs/rawhide.mp3 -O Rawhide.mp3
+fi
+#Reason\_I\_Sing\_So\_Hard\__\_Stable\_Singers.mp3
+if [ ! -f "Reason\_I\_Sing\_So\_Hard\__\_Stable\_Singers.mp3" ]
+ then
+  wget http://www.virtualcampfire.co.uk/songs/reason%20I%20sing%20so%20hard%20-%20stable%20singers.mp3 -O Reason\_I\_Sing\_So\_Hard\__\_Stable\_Singers.mp3
 fi
 #Recorder\_Break.mp3
 if [ ! -f "Recorder\_Break.mp3" ]
@@ -1533,6 +1933,11 @@ fi
 if [ ! -f "Rockin\'_Me_Babies_To_Sleep.mp3" ]
  then
   wget http://www.virtualcampfire.co.uk/songs/Rockin\'_me_Babies_to_Sleep.mp3 -O Rockin\'_Me_Babies_To_Sleep.mp3
+fi
+#Rocking\_Chair\__\_In\_The\_Crypt.mp3
+if [ ! -f "Rocking\_Chair\__\_In\_The\_Crypt.mp3" ]
+ then
+  wget http://www.virtualcampfire.co.uk/songs/rocking%20chair%20-%20in%20the%20crypt.mp3 -O Rocking\_Chair\__\_In\_The\_Crypt.mp3
 fi
 #Rockin\_Me\_Babies.mp3
 if [ ! -f "Rockin\_Me\_Babies.mp3" ]
@@ -1594,6 +1999,11 @@ if [ ! -f "Rythm\_And\_Syncopation.mp3" ]
  then
   wget http://www.virtualcampfire.co.uk/songs/rythm%20and%20syncopation.mp3 -O Rythm\_And\_Syncopation.mp3
 fi
+#Sad\_Am\_I\_Without\_Thee\__\_In\_The\_Crypt\_Dec\_14.mp3
+if [ ! -f "Sad\_Am\_I\_Without\_Thee\__\_In\_The\_Crypt\_Dec\_14.mp3" ]
+ then
+  wget http://www.virtualcampfire.co.uk/songs/Sad%20am%20I%20without%20thee%20-%20in%20the%20crypt%20Dec%2014.mp3 -O Sad\_Am\_I\_Without\_Thee\__\_In\_The\_Crypt\_Dec\_14.mp3
+fi
 #Sailboat\_Malarkey\_\(Snippet\).mp3
 if [ ! -f "Sailboat\_Malarkey\_\(Snippet\).mp3" ]
  then
@@ -1624,6 +2034,11 @@ if [ ! -f "San\_Franciso\_Bay01.mp3" ]
  then
   wget http://www.virtualcampfire.co.uk/songs/SAN%20FRANCISO%20BAY01.mp3 -O San\_Franciso\_Bay01.mp3
 fi
+#Sante\_Anno\_Snippet\__\_Fenwood\_Glee\_14.mp3
+if [ ! -f "Sante\_Anno\_Snippet\__\_Fenwood\_Glee\_14.mp3" ]
+ then
+  wget http://www.virtualcampfire.co.uk/songs/Sante%20Anno%20snippet%20-%20Fenwood%20Glee%2014.mp3 -O Sante\_Anno\_Snippet\__\_Fenwood\_Glee\_14.mp3
+fi
 #Saving\_For\_Breakfast.mp3
 if [ ! -f "Saving\_For\_Breakfast.mp3" ]
  then
@@ -1642,12 +2057,12 @@ fi
 #Shallow\_Brown.mp3
 if [ ! -f "Shallow\_Brown.mp3" ]
  then
-  wget http://www.virtualcampfire.co.uk/songs/shallow%20brown.mp3 -O Shallow\_Brown.mp3
+  wget http://www.virtualcampfire.co.uk/songs/Shallow%20Brown.mp3 -O Shallow\_Brown.mp3
 fi
 #Shallow\_Brown.mp3
 if [ ! -f "Shallow\_Brown.mp3" ]
  then
-  wget http://www.virtualcampfire.co.uk/songs/Shallow%20Brown.mp3 -O Shallow\_Brown.mp3
+  wget http://www.virtualcampfire.co.uk/songs/shallow%20brown.mp3 -O Shallow\_Brown.mp3
 fi
 #Shawnee\_Town.mp3
 if [ ! -f "Shawnee\_Town.mp3" ]
@@ -1724,6 +2139,11 @@ if [ ! -f "Sinner\_Man\_\(Putney\_Allstars\).mp3" ]
  then
   wget http://www.virtualcampfire.co.uk/songs/Sinner%20Man%20%28Putney%20Allstars%29.mp3 -O Sinner\_Man\_\(Putney\_Allstars\).mp3
 fi
+#Sin_Song.mp3
+if [ ! -f "Sin_Song.mp3" ]
+ then
+  wget http://www.virtualcampfire.co.uk/songs/Sin_Song.mp3 -O Sin_Song.mp3
+fi
 #Siyahamba\__\_In\_The\_Crypt.mp3
 if [ ! -f "Siyahamba\__\_In\_The\_Crypt.mp3" ]
  then
@@ -1799,6 +2219,11 @@ if [ ! -f "Step\_Lightly.mp3" ]
  then
   wget http://www.virtualcampfire.co.uk/songs/Step%20Lightly.mp3 -O Step\_Lightly.mp3
 fi
+#Stone_Cold_Dead.mp3
+if [ ! -f "Stone_Cold_Dead.mp3" ]
+ then
+  wget http://www.virtualcampfire.co.uk/songs/Stone_Cold_Dead.mp3 -O Stone_Cold_Dead.mp3
+fi
 #Sweet\_Roseanne.mp3
 if [ ! -f "Sweet\_Roseanne.mp3" ]
  then
@@ -1873,6 +2298,11 @@ fi
 if [ ! -f "The\_Reason\_I\_Sing\_So\_Hard.mp3" ]
  then
   wget http://www.virtualcampfire.co.uk/songs/the%20reason%20I%20sing%20so%20hard.mp3 -O The\_Reason\_I\_Sing\_So\_Hard.mp3
+fi
+#Theres\_A\_Leak\_In\_This\_Old\_Building\__\_In\_The\_Crypt.mp3
+if [ ! -f "Theres\_A\_Leak\_In\_This\_Old\_Building\__\_In\_The\_Crypt.mp3" ]
+ then
+  wget http://www.virtualcampfire.co.uk/songs/theres%20a%20leak%20in%20this%20old%20building%20-%20in%20the%20crypt.mp3 -O Theres\_A\_Leak\_In\_This\_Old\_Building\__\_In\_The\_Crypt.mp3
 fi
 #The\_Village\_Dump.mp3
 if [ ! -f "The\_Village\_Dump.mp3" ]
@@ -1964,6 +2394,21 @@ if [ ! -f "Tower\_Of\_Strength\__\_Postcamps\_07.mp3" ]
  then
   wget http://www.virtualcampfire.co.uk/songs/Tower%20of%20Strength%20-%20postcamps%2007.mp3 -O Tower\_Of\_Strength\__\_Postcamps\_07.mp3
 fi
+#Town\_Of\_Dungannon\__\_Stable\_Singers.mp3
+if [ ! -f "Town\_Of\_Dungannon\__\_Stable\_Singers.mp3" ]
+ then
+  wget http://www.virtualcampfire.co.uk/songs/town%20of%20dungannon%20-%20stable%20singers.mp3 -O Town\_Of\_Dungannon\__\_Stable\_Singers.mp3
+fi
+#Travelling\_Shoes\__\_In\_The\_Crypt.mp3
+if [ ! -f "Travelling\_Shoes\__\_In\_The\_Crypt.mp3" ]
+ then
+  wget http://www.virtualcampfire.co.uk/songs/travelling%20shoes%20-%20in%20the%20crypt.mp3 -O Travelling\_Shoes\__\_In\_The\_Crypt.mp3
+fi
+#Trees\_Bend\_Your\_Branches\_Down\__\_In\_The\_Crypt\_Dec\_14.mp3
+if [ ! -f "Trees\_Bend\_Your\_Branches\_Down\__\_In\_The\_Crypt\_Dec\_14.mp3" ]
+ then
+  wget http://www.virtualcampfire.co.uk/songs/Trees%20bend%20your%20branches%20down%20-%20in%20the%20crypt%20Dec%2014.mp3 -O Trees\_Bend\_Your\_Branches\_Down\__\_In\_The\_Crypt\_Dec\_14.mp3
+fi
 #Triple\_Whammy\_\(Putney\_Allstars\).mp3
 if [ ! -f "Triple\_Whammy\_\(Putney\_Allstars\).mp3" ]
  then
@@ -2044,6 +2489,11 @@ if [ ! -f "Wade\_In\_The\_Water\__\_Postcamps\_07.mp3" ]
  then
   wget http://www.virtualcampfire.co.uk/songs/Wade%20in%20the%20Water%20-%20postcamps%2007.mp3 -O Wade\_In\_The\_Water\__\_Postcamps\_07.mp3
 fi
+#Warm\_Up\__\_Stable\_Singers.mp3
+if [ ! -f "Warm\_Up\__\_Stable\_Singers.mp3" ]
+ then
+  wget http://www.virtualcampfire.co.uk/songs/warm%20up%20-%20stable%20singers.mp3 -O Warm\_Up\__\_Stable\_Singers.mp3
+fi
 #Water\_Is\_Wide.mp3
 if [ ! -f "Water\_Is\_Wide.mp3" ]
  then
@@ -2094,6 +2544,21 @@ if [ ! -f "Went\_Down\_To\_The\_River\_To\_Pray.mp3" ]
  then
   wget http://www.virtualcampfire.co.uk/songs/WENT%20DOWN%20TO%20THE%20RIVER%20TO%20PRAY.mp3 -O Went\_Down\_To\_The\_River\_To\_Pray.mp3
 fi
+#Wen\_Wango\__\_Fenwood\_Glee\_14.mp3
+if [ ! -f "Wen\_Wango\__\_Fenwood\_Glee\_14.mp3" ]
+ then
+  wget http://www.virtualcampfire.co.uk/songs/Wen%20Wango%20-%20Fenwood%20Glee%2014.mp3 -O Wen\_Wango\__\_Fenwood\_Glee\_14.mp3
+fi
+#Wen\_Wango\_Part\_A\__\_Fenwood\_Glee\_14.mp3
+if [ ! -f "Wen\_Wango\_Part\_A\__\_Fenwood\_Glee\_14.mp3" ]
+ then
+  wget http://www.virtualcampfire.co.uk/songs/Wen%20Wango%20part%20A%20-%20Fenwood%20Glee%2014.mp3 -O Wen\_Wango\_Part\_A\__\_Fenwood\_Glee\_14.mp3
+fi
+#What\_Did\_The\_Deep\_Sea\_Say\_In\_The\_Back\_Of\_The\_Clattery\_Van\__\_Stable\_Singers.mp3
+if [ ! -f "What\_Did\_The\_Deep\_Sea\_Say\_In\_The\_Back\_Of\_The\_Clattery\_Van\__\_Stable\_Singers.mp3" ]
+ then
+  wget http://www.virtualcampfire.co.uk/songs/what%20did%20the%20deep%20sea%20say%20in%20the%20back%20of%20the%20clattery%20van%20-%20stable%20singers.mp3 -O What\_Did\_The\_Deep\_Sea\_Say\_In\_The\_Back\_Of\_The\_Clattery\_Van\__\_Stable\_Singers.mp3
+fi
 #Whisky.mp3
 if [ ! -f "Whisky.mp3" ]
  then
@@ -2119,6 +2584,11 @@ if [ ! -f "White\_Cockade\_\(Wagon\_Band\).mp3" ]
  then
   wget http://www.virtualcampfire.co.uk/songs/White%20Cockade%20%28Wagon%20Band%29.mp3 -O White\_Cockade\_\(Wagon\_Band\).mp3
 fi
+#White\_Sands\_And\_Grey\_Sands\__\_In\_The\_Crypt\_Nov\_14.mp3
+if [ ! -f "White\_Sands\_And\_Grey\_Sands\__\_In\_The\_Crypt\_Nov\_14.mp3" ]
+ then
+  wget http://www.virtualcampfire.co.uk/songs/White%20Sands%20and%20Grey%20Sands%20-%20in%20the%20crypt%20Nov%2014.mp3 -O White\_Sands\_And\_Grey\_Sands\__\_In\_The\_Crypt\_Nov\_14.mp3
+fi
 #White_Cockade.mp3
 if [ ! -f "White_Cockade.mp3" ]
  then
@@ -2128,6 +2598,11 @@ fi
 if [ ! -f "Whoa\_Naday\_Naday\_Nadeechay.mp3" ]
  then
   wget http://www.virtualcampfire.co.uk/songs/Whoa%20Naday%20Naday%20Nadeechay.mp3 -O Whoa\_Naday\_Naday\_Nadeechay.mp3
+fi
+#Wild\_Mountain\_Thyme\__\_Stable\_Singers.mp3
+if [ ! -f "Wild\_Mountain\_Thyme\__\_Stable\_Singers.mp3" ]
+ then
+  wget http://www.virtualcampfire.co.uk/songs/wild%20mountain%20thyme%20-%20stable%20singers.mp3 -O Wild\_Mountain\_Thyme\__\_Stable\_Singers.mp3
 fi
 #Wildwood\_Flower\_\(Barnyard\).mp3
 if [ ! -f "Wildwood\_Flower\_\(Barnyard\).mp3" ]
@@ -2189,6 +2664,11 @@ if [ ! -f "Worried\_Man\_Rockin\_Blues.mp3" ]
  then
   wget http://www.virtualcampfire.co.uk/songs/Worried%20Man%20Rockin%20Blues.mp3 -O Worried\_Man\_Rockin\_Blues.mp3
 fi
+#Would\_You\_Like\_A\_Cup\_Of\_Tea\_\(Andrew\_Dixon\_Lovely\_Music\_Man\)\__\_Stable\_Singers.mp3
+if [ ! -f "Would\_You\_Like\_A\_Cup\_Of\_Tea\_\(Andrew\_Dixon\_Lovely\_Music\_Man\)\__\_Stable\_Singers.mp3" ]
+ then
+  wget http://www.virtualcampfire.co.uk/songs/would%20you%20like%20a%20cup%20of%20tea%20%28andrew%20dixon%20lovely%20music%20man%29%20-%20stable%20singers.mp3 -O Would\_You\_Like\_A\_Cup\_Of\_Tea\_\(Andrew\_Dixon\_Lovely\_Music\_Man\)\__\_Stable\_Singers.mp3
+fi
 #Yellay\_Mama.mp3
 if [ ! -f "Yellay\_Mama.mp3" ]
  then
@@ -2213,6 +2693,11 @@ fi
 if [ ! -f "Yolomano_Parts.mp3" ]
  then
   wget http://www.virtualcampfire.co.uk/songs/yolomano_parts.mp3 -O Yolomano_Parts.mp3
+fi
+#You\_Ride\_The\_Black\_Horse\__\_Fenwood\_Glee\_14.mp3
+if [ ! -f "You\_Ride\_The\_Black\_Horse\__\_Fenwood\_Glee\_14.mp3" ]
+ then
+  wget http://www.virtualcampfire.co.uk/songs/You%20Ride%20the%20Black%20Horse%20-%20Fenwood%20Glee%2014.mp3 -O You\_Ride\_The\_Black\_Horse\__\_Fenwood\_Glee\_14.mp3
 fi
 #Zum\_Gali\_Gali.mp3
 if [ ! -f "Zum\_Gali\_Gali.mp3" ]
