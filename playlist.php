@@ -39,7 +39,7 @@ foreach($files as $filename) {
   print   '{id:'.$id.
           ',url:"'.rawurlencode($filename).'"'.
           ',title:"'.$title.'"'.
-          ',timeLength:"'. $ThisFileInfo['playtime_string'].'"'.
+          ',playtime:"'. $ThisFileInfo['playtime_string'].'"'.
           ',size: "'.$file_mb.'Mb"},' . "\n";
 }
 
@@ -49,8 +49,8 @@ foreach($files as $filename) {
 function init() {
   var selector = document.getElementById('selector');
   var tableHtml = "<table id='songlist' class='sortable'>\n";
-  for (var i = all.length - 1; i >= 0; i--) {
-    tableHtml += songLine(all[i]);
+  for (var i = 0; i < all.length; i++) {
+    tableHtml =  tableHtml + songLine(all[i]);
   }
   tableHtml += "</table>\n";
   selector.innerHTML += tableHtml;
@@ -60,15 +60,15 @@ function init() {
 function songLine(song) { 
   return "<tr class='song'>\n" +
 "  <td class='songname'>\n" +
-"    <a onclick=\"choose('" + song.title.replace(' ', '_') + ".mp3')\"\n" +
-"       title='[1:01]'\n" + 
+"    <a onclick=\"choose('" + song.url + "')\"\n" +
+"       title='Playing time " + song.playtime + "'\n" + 
 "    >\n"  +
 "    <img src='playbutton.png' alt='" + song.title + "'>\n" + 
      song.title +
 "    </a>\n" +
 "  </td>\n" + 
 "  <td class='download'>\n" +
-"    <a href='" + song.title.replace(' ', '_') + ".mp3' title='Download " + song.size + " mp3'>\n" + 
+"    <a href='" + song.url + "' title='Download " + song.size + " mp3'>\n" + 
 "      <img src='downloadButton.png' alt='Download raw mp3'>\n" +
 "    </a>\n" +
 "  </td>\n" +
@@ -92,7 +92,7 @@ function choose(url) {
   var urlExists = false;
   var request = new XMLHttpRequest();  
   // Open a synchronous request so that urlExists is set
-  request.open('GET', lUrl, false);
+  request.open('GET', lUrl, true);
   request.onreadystatechange = function(){
     if (request.readyState === 4){
       if (request.status !== 404) {
@@ -100,7 +100,9 @@ function choose(url) {
       }
     }
   };
-  request.send();
+  try { 
+    request.send();
+  } catch (err) {}
   if (urlExists) {         
    window.open(lUrl, 'lyrics');
   }
