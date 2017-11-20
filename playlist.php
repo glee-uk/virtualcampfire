@@ -53,7 +53,7 @@ function init() {
     tableHtml =  tableHtml + songLine(all[i]);
   }
   tableHtml += "</table>\n";
-  selector.innerHTML += tableHtml;
+  selector.innerHTML = tableHtml;
 }
 
 
@@ -92,7 +92,7 @@ function choose(url) {
   var urlExists = false;
   var request = new XMLHttpRequest();  
   // Open a synchronous request so that urlExists is set
-  request.open('GET', lUrl, true);
+  request.open('GET', lUrl, false);
   request.onreadystatechange = function(){
     if (request.readyState === 4){
       if (request.status !== 404) {
@@ -102,7 +102,9 @@ function choose(url) {
   };
   try { 
     request.send();
-  } catch (err) {}
+  } catch (err) {
+    // ignore 404
+  }
   if (urlExists) {         
    window.open(lUrl, 'lyrics');
   }
@@ -119,7 +121,6 @@ function lyricsUrl(url) {
    if (wb != null) { 
      return wb[1] + ".html";
    } else { 
-     alert('foo');
      return "foo.txt";
    }
   }
@@ -160,10 +161,10 @@ to learn and teach traditional songs online.
 This page was originally put together by <a href="http://leomurray.co.uk">Leo Murray</a> and Jack Freedman. 
 </p>
 <p>
-<a href="http://oolong.co.uk">Fergus</a> just took over the development of it in September 2009.
+<a href="http://oolong.co.uk">Fergus</a> took over the development of it in September 2009.
 </p>
 <p>
-<a href="http://tim.pizey.net/">Tim</a> updated the site in July 2014.
+<a href="http://tim.pizey.uk/">Tim</a> updated the site in July 2014, November 2017.
 </p>
 </div>
 </body>

@@ -138,7 +138,7 @@ This page was originally put together by <a href="http://leomurray.co.uk">Leo Mu
 <a href="http://oolong.co.uk">Fergus</a> just took over the development of it in September 2009.
 </p>
 <p>
-<a href="http://tim.pizey.net/">Tim</a> updated the site in July 2014.
+<a href="http://tim.pizey.uk/">Tim</a> updated the site in July 2014, November 2017.
 </p>
 </div>
 </body>
