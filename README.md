@@ -14,3 +14,16 @@ Run
 php jukebox.php > index.html
 ```
 
+To Scrape the original site: 
+
+```
+python scrape.py > scrape.sh
+
+python rename.py > rename.py
+
+./scrape.sh
+
+./rename.py
+
+```
+
