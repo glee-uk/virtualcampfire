@@ -75,59 +75,8 @@ function songLine(song) {
 "</tr>\n" ;
 }
 
-function choose(url) { 
-  window.currentAudioElement = document.getElementById('player');
-  if (typeof window.currentAudioElement === 'undefined') { 
-    alert('your browser does not like audio.');
-  } else {
-    if (!window.currentAudioElement.paused) {
-      window.currentAudioElement.pause();
-      window.currentAudioElement.currentTime = 0;   
-    }
-    window.currentAudioElement.src = url;
-    window.currentAudioElement.play();
-  }
-
-  var lUrl = lyricsUrl(url);
-  var urlExists = false;
-  var request = new XMLHttpRequest();  
-  // Open a synchronous request so that urlExists is set
-  request.open('GET', lUrl, false);
-  request.onreadystatechange = function(){
-    if (request.readyState === 4){
-      if (request.status !== 404) {
-        urlExists = true;
-      }
-    }
-  };
-  try { 
-    request.send();
-  } catch (err) {
-    // ignore 404
-  }
-  if (urlExists) {         
-   window.open(lUrl, 'lyrics');
-  }
-}
-
-function lyricsUrl(url) { 
-  var plain = new RegExp("^([^\(]+)\.mp3$");
-  var m = plain.exec(decodeURI(url));
-  if (m != null) { 
-   return m[1] + ".html";
-  } else { 
-   var withBrackets = new RegExp(/^([^\(]+?)_\(([^\)]+)\)/);
-   var wb = withBrackets.exec(decodeURI(url));
-   if (wb != null) { 
-     return wb[1] + ".html";
-   } else { 
-     return "foo.txt";
-   }
-  }
-
-} 
-
 </script>
+<script type="text/javascript" src="tools.js"></script>
 <link href="song_styles.css" rel="stylesheet" type="text/css" />
 </head>
 <body onload="init()">
