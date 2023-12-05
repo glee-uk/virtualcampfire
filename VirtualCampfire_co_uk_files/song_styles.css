@@ -1,0 +1,88 @@
+/* CSS Document */
+body {
+	background-color:#004000;
+	color:white;
+	font-family: Tahoma, Arial;
+}
+#logo{
+	background:url(fscfireball.jpg) no-repeat 20px 10px;
+	width:200px;
+	height:256px;
+	display:block;
+	font-size:16px;
+	text-align:center;
+}
+a:active, a:link, a:visited{
+	color: #E5FFB2;
+
+	border: 0px;
+	padding: 2px;	
+}
+a:hover {
+	color: #E5FFB2;
+	border: 0px;	
+	text-decoration: none;
+	padding: 2px;
+}
+th {
+    text-align:left;
+    border-bottom:1px solid green;
+}
+
+.holder {
+	color: #E5FFB2;
+ 	width: 700px;
+	font-size: 12px;
+	font-family: Tahoma, Arial;
+}
+.songname{
+	margin: 5px;
+	color: #FFFFFF; 
+	font-size:12px;
+}
+.songname a {
+	background:transparent url(playbutton.png) no-repeat scroll left center;
+	padding: 5px 1px 5px 18px;
+}
+#songlist td {
+	padding: 4px;
+	border-bottom:1px dotted green;
+}
+#songlist .song {
+	border-bottom:1px solid #00CC00;
+	border-left:none;
+	list-style:none;
+}
+.song a:link {
+	text-decoration:none;
+}
+.download {
+	border-left:1px dotted green;
+    font-size:0.75em;
+}
+.date {
+    font-size:0.75em;
+    border-left:1px dotted green;
+}
+.filesize {
+    font-size:0.75em;
+    border-left:1px dotted green;
+}
+.para {
+    width:50%;
+    margin:1em auto;
+    font-size:0.8em;
+}
+
+#songlist {
+    border:2px inset green;
+    margin:auto;
+    padding:2px;
+    width:50%;
+}
+
+.player {
+	position:fixed;
+	left:20px;
+	top:250;
+}
