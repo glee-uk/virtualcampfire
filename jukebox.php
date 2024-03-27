@@ -33,7 +33,7 @@ to learn and teach traditional songs online.
 <?php	
 // Install with: sudo apt-get install php-getid3
 // or use  getid3/getID3-1.9.12/getid3/
-require_once('getid3/getID3-1.9.12/getid3/getid3.php'); 
+require_once('getid3/getID3-1.9.21/getid3/getid3.php');
 
 // Initialize getID3 engine 
 $getID3 = new getID3; 
@@ -54,10 +54,10 @@ foreach($files as $filename) {
   $ThisFileInfo = $getID3->analyze($filename); 
 
   $filetime = filemtime($filename);
-  $file_mb  = round((filesize($filename) / 1048576), 2);
+  $file_mb = round((filesize($filename) / 1048576), 2);
   $title = str_replace(".mp3", "", $filename );	
   $title = str_replace("_", " ", $title );	
-  $title=str_replace("-", " ", $title );	
+  $title = str_replace("-", " ", $title );
   print 
 '<tr class="song">
   <td class="songname">
