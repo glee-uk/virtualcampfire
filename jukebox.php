@@ -33,13 +33,13 @@ to learn and teach traditional songs online.
 <?php	
 // Install with: sudo apt-get install php-getid3
 // or use  getid3/getID3-1.9.12/getid3/
-require_once('getid3/getID3-1.9.21/getid3/getid3.php');
+//require_once('getid3/getID3-1.9.21/getid3/getid3.php');
 
 // Initialize getID3 engine 
-$getID3 = new getID3; 
+//$getID3 = new getID3;
 
 
-	$handle = opendir(".");
+$handle = opendir(".");
 
 while ($filename = readdir($handle)) {
 	if (preg_match("/mp3$/", $filename) )
@@ -51,7 +51,7 @@ while ($filename = readdir($handle)) {
 natcasesort($files);
 
 foreach($files as $filename) {
-  $ThisFileInfo = $getID3->analyze($filename); 
+//  $ThisFileInfo = $getID3->analyze($filename);
 
   $filetime = filemtime($filename);
   $file_mb = round((filesize($filename) / 1048576), 2);
@@ -62,8 +62,7 @@ foreach($files as $filename) {
 '<tr class="song">
   <td class="songname">
     <a onclick="choose(\''.rawurlencode($filename).'\')"
-       title="['.$ThisFileInfo['playtime_string'].']"
-    > 
+    >
     <img src="playbutton.png" alt="Play '.$title.'">
      '.$title.'
 
