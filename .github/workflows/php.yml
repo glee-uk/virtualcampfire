@@ -34,5 +34,6 @@ jobs:
 
     - name: Commit generated files
       run: 
-        git commit -m "Github Actions $(date)" index.html
+        git commit -m "Github Actions $(date)" index.html 
+        
         git push origin gh-pages
