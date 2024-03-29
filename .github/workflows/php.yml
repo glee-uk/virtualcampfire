@@ -1,4 +1,4 @@
-name: PHP Composer
+name: Run PHP and commit
 
 on:
   push:
@@ -32,8 +32,8 @@ jobs:
     - name: Run the build php script
       run: php jukebox.php > index.html
 
-    # Add a test script to composer.json, for instance: "test": "vendor/bin/phpunit"
-    # Docs: https://getcomposer.org/doc/articles/scripts.md
-
-    # - name: Run test suite
-    #   run: composer run-script test
+    - id: commit_files
+    - name: Commit generated files
+      run: 
+        git commit -m "Github Actions $(date)" index.html
+        git push origin gh-pages
