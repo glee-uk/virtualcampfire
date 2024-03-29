@@ -17,11 +17,8 @@ jobs:
     steps:
     - uses: actions/checkout@v3
 
-    - name: Setup PHP with PECL extension
-      uses: shivammathur/setup-php@v2
-      with:
-          php-version: '8.3'
-          extensions: getID3-1.9.12
+    - name: Install php-getid3
+      run: sudo apt-get install -y php-getid3
     
     - name: Run the build php script
       run: php jukebox.php > index.html
