@@ -34,6 +34,11 @@ jobs:
 
     - name: Commit generated files
       run: 
+
+        git config --local user.email "timp@paneris.com"
+      
+        git config --global user.name "TimP Github"
+  
         git commit -m "Github Actions $(date)" index.html 
         
         git push origin gh-pages
