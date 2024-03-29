@@ -63,6 +63,7 @@ foreach($files as $filename) {
 '<tr class="song">
   <td class="songname">
     <a onclick="choose(\''.rawurlencode($filename).'\')"
+       title="['.$ThisFileInfo['playtime_string'].']"
     >
     <img src="playbutton.png" alt="Play '.$title.'">
      '.$title.'
