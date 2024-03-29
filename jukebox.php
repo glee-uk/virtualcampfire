@@ -49,6 +49,7 @@ while ($filename = readdir($handle)) {
 }
 
 natcasesort($files);
+$dateStamp = date('l jS \of F Y h:i:s A');
 
 foreach($files as $filename) {
 //  $ThisFileInfo = $getID3->analyze($filename);
@@ -88,7 +89,10 @@ This page was originally put together by <a href="http://leomurray.co.uk">Leo Mu
 <a href="http://oolong.co.uk">Fergus</a> just took over the development of it in September 2009.
 </p>
 <p>
-<a href="http://tim.pizey.uk/">Tim</a> updated the site in July 2014, November 2017.
+<a href="http://tim.pizey.uk/">Tim</a> updated the site in July 2014, November 2017, April 2024
+</p>
+<p>
+Last updated $dateStamp
 </p>
 </div>
 </body>
