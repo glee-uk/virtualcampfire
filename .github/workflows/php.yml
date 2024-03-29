@@ -41,4 +41,8 @@ jobs:
   
         git commit -m "Github Actions $(date)" index.html 
         
-        git push origin gh-pages
+       uses: ad-m/github-push-action@master
+       with:
+          branch: gh-pages #ignore if your branch is master
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          force: true
