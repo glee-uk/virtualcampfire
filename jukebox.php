@@ -52,7 +52,7 @@ natcasesort($files);
 $dateStamp = date('l jS \of F Y H:i:s');
 
 foreach($files as $filename) {
-//  $ThisFileInfo = $getID3->analyze($filename);
+  $ThisFileInfo = $getID3->analyze($filename);
 
   $filetime = filemtime($filename);
   $file_mb = round((filesize($filename) / 1048576), 2);
