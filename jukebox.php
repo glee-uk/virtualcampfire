@@ -32,7 +32,7 @@ to learn and teach traditional songs online.
 <table id="songlist" class="sortable">
 <?php	
 // Install with: sudo apt-get install php-getid3
-// or use  getid3/getID3-1.9.12/getid3/
+// or use  getid3/getID3-1.9.12/getid3/ if local
 require_once('getid3/getid3.php');
 
 // Initialize getID3 engine 
@@ -49,7 +49,7 @@ while ($filename = readdir($handle)) {
 }
 
 natcasesort($files);
-$dateStamp = date('l jS \of F Y h:i:s A');
+$dateStamp = date('l jS \of F Y H:i:s');
 
 foreach($files as $filename) {
 //  $ThisFileInfo = $getID3->analyze($filename);
