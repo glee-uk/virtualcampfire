@@ -35,7 +35,7 @@ jobs:
     - name: Commit generated files
       run: 
 
-        git config --local user.email "timp@paneris.com"
+        git config --local user.email "timp@paneris.org"
       
         git config --global user.name "TimP Github"
   
