@@ -33,10 +33,10 @@ to learn and teach traditional songs online.
 <?php	
 // Install with: sudo apt-get install php-getid3
 // or use  getid3/getID3-1.9.12/getid3/
-//require_once('getid3/getID3-1.9.21/getid3/getid3.php');
+require_once('getid3/getID3-1.9.21/getid3/getid3.php');
 
 // Initialize getID3 engine 
-//$getID3 = new getID3;
+$getID3 = new getID3;
 
 
 $handle = opendir(".");
@@ -92,7 +92,9 @@ This page was originally put together by <a href="http://leomurray.co.uk">Leo Mu
 <a href="http://tim.pizey.uk/">Tim</a> updated the site in July 2014, November 2017, April 2024
 </p>
 <p>
-Last updated $dateStamp
+<?php
+print 'Last updated '.$dateStamp;
+?>
 </p>
 </div>
 </body>
