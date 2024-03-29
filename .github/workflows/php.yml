@@ -32,7 +32,6 @@ jobs:
     - name: Run the build php script
       run: php jukebox.php > index.html
 
-    - id: commit_files
     - name: Commit generated files
       run: 
         git commit -m "Github Actions $(date)" index.html
