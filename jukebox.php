@@ -3,32 +3,31 @@
   <title>Virtual Campfire</title>
   <script type="text/javascript" src="tools.js"></script>
   <link href="song_styles.css" rel="stylesheet" type="text/css" />
-
-</head>
+ </head>
 <body>
 
-
-
-<audio 
+<audio
   id="player" 
   type="audio/mpeg"
   loop >
 </audio>
 <div id="left" style='float:left; width:20%; textalign:left;'>
-<div id="logo"></div>
-<ul>
-<li>Email <a href="mailto:tim.pizey+vc@gmail.com">Tim</a> to contribute songs or feedback</li>
-<li>
-Or make a <a href="https://github.com/glee-uk/virtualcampfire/pulls">pull request</a>
-</li>
-</ul>
+ <div id="logo"></div>
+  <ul>
+   <li>Email <a href="mailto:tim.pizey+vc@gmail.com">Tim</a> to contribute songs or feedback</li>
+   <li>
+  Or make a <a href="https://github.com/glee-uk/virtualcampfire/pulls">pull request</a>
+   </li>
+  </ul>
 </div>
+
+<div id=github style="float:right;"><a href="https://github.com/glee-uk/virtualcampfire">
+ <img decoding="async" width="149" height="149"
+   src="https://github.blog/wp-content/uploads/2008/12/forkme_right_green_007200.png?resize=149%2C149"
+  alt="Fork me on GitHub" loading="lazy" ></a>
+</div>
+
 <div text-align='center'>
-<div float=right><a href="https://github.com/glee-uk/virtualcampfire">
-<img decoding="async" width="149" height="149"
-src="https://github.blog/wp-content/uploads/2008/12/forkme_right_green_007200.png?resize=149%2C149"
-alt="Fork me on GitHub" loading="lazy" ></a>
-</div>
 <h1>Virtual Campfire</h1>
 <p>
 A place for <a href="http://fsc.org.uk/">Forest School Campers</a> 
@@ -92,7 +91,7 @@ foreach($files as $filename) {
 This page was originally put together by <a href="http://leomurray.co.uk">Leo Murray</a> and Jack Freedman. 
 </p>
 <p>
-<a href="http://oolong.co.uk">Fergus</a> just took over the development of it in September 2009.
+<a href="http://oolong.co.uk">Fergus</a> took over the development of it in September 2009.
 </p>
 <p>
 <a href="http://tim.pizey.uk/">Tim</a> updated the site in July 2014, November 2017, April 2024
