@@ -20,8 +20,14 @@ jobs:
     - name: Install php-getid3
       run: sudo apt-get install -y php-getid3
     
-    - name: Run the build php script
-      run: php jukebox.php > index.html
+    - name: List all files
+      run: ls *.mp3 > index.txt
+
+    - name: Run the build script for all files
+      run: php jukebox.php index.txt > index.html
+
+    - name: Run the build script for Tim's Selection
+      run: php jukebox.php tim.txt > tim.html
 
     - name: Commit generated files
       run: 
