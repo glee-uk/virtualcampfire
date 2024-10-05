@@ -43,7 +43,7 @@ require_once('getid3/getid3.php');
 $getID3 = new getID3;
 
 
-$handle = opendir(".");
+$handle = opendir("./mp3");
 
 while ($filename = readdir($handle)) {
 	if (preg_match("/mp3$/", $filename) )
@@ -60,8 +60,9 @@ foreach($files as $filename) {
 
   $filetime = filemtime($filename);
   $file_mb = round((filesize($filename) / 1048576), 2);
-  $title = str_replace(".mp3", "", $filename );	
-  $title = str_replace("_", " ", $title );	
+  $title = str_replace("mp3/", "", $filename );
+  $title = str_replace(".mp3", "", $filename );
+  $title = str_replace("_", " ", $title );
   $title = str_replace("-", " ", $title );
   print 
 '<tr class="song">
