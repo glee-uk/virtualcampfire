@@ -48,7 +48,7 @@ $handle = opendir("./mp3");
 while ($filename = readdir($handle)) {
 	if (preg_match("/mp3$/", $filename) )
 	{
-		$files[] = $filename;
+		$files[] = "mp3/" + $filename;
 	}
 }
 
