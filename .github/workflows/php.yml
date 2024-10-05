@@ -21,7 +21,7 @@ jobs:
       run: sudo apt-get install -y php-getid3
     
     - name: List all files
-      run: ls *.mp3 > index.txt
+      run: ls mp3/*.mp3 > index.txt
 
     - name: Run the build script for all files
       run: php jukebox.php index.txt > index.html
