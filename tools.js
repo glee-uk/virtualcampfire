@@ -59,10 +59,10 @@ function debug(str) {
   }
   
   function lyricsUrl(url) { 
-    var plain = new RegExp("^([^\(]+)\.mp3$");
+    var plain = new RegExp("^mp3/([^\(]+)\.mp3$");
     var m = plain.exec(decodeURI(url));
     if (m != null) { 
-     return m[1] + ".html";
+     return "lyrics/" + m[1] + ".html";
     } else { 
      var withBrackets = new RegExp(/^([^\(]+?)_\(([^\)]+)\)/);
      var wb = withBrackets.exec(decodeURI(url));
