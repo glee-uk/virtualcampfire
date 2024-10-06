@@ -59,17 +59,18 @@ function debug(str) {
   }
   
   function lyricsUrl(url) { 
-    var plain = new RegExp("^mp3%2F([^\(]+)\.mp3$");
-    var m = plain.exec(decodeURI(url));
+    var decoded = decodeURI(url);
+    var plain = new RegExp("^mp3/([^\(]+)\.mp3$");
+    var m = plain.exec(decoded);
     if (m != null) { 
      return "lyrics/" + m[1] + ".html";
     } else { 
      var withBrackets = new RegExp(/^([^\(]+?)_\(([^\)]+)\)/);
-     var wb = withBrackets.exec(decodeURI(url));
+     var wb = withBrackets.exec(decoded);
      if (wb != null) { 
        return wb[1] + ".html";
      } else { 
-       alert(url);
+       alert(decoded);
        return "foo.txt";
      }
     }
