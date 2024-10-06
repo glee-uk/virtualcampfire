@@ -65,7 +65,7 @@ function debug(str) {
     if (m != null) { 
      return "lyrics/" + m[1] + ".html";
     } else { 
-     var withBrackets = new RegExp(/^mp3\%2F([^\(]+?)_\(([^\)]+)\)/);
+     var withBrackets = new RegExp("^mp3\%2F([^\(]+?)_\(([^\)]+)\)");
      var wb = withBrackets.exec(decoded);
      if (wb != null) { 
        return "lyrics/" + wb[1] + ".html";
