@@ -69,7 +69,7 @@ function debug(str) {
      if (wb != null) { 
        return wb[1] + ".html";
      } else { 
-       alert('foo');
+       alert(url);
        return "foo.txt";
      }
     }
