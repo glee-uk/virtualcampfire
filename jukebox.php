@@ -33,7 +33,7 @@
 A place for <a href="http://fsc.org.uk/">Forest School Campers</a> 
 to learn and teach traditional songs online. 
 </p>
-<table id="songlist" class="sortable">
+<table id="songlist" >
 <?php	
 // Install with: sudo apt-get install php-getid3
 // or use  getid3/getID3-1.9.12/getid3/ if local
