@@ -63,8 +63,7 @@ foreach($files as $filename) {
   $title = str_replace("mp3/", "", $filename );
   $title = str_replace(".mp3", "", $title );
   $title = str_replace("_", " ", $title );
-  $title = str_replace("-", " ", $title );
-  print 
+  print
 '<tr class="song">
   <td class="songname">
     <a onclick="choose(\''.rawurlencode($filename).'\')"
