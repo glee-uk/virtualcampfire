@@ -60,7 +60,7 @@ foreach($files as $filename) {
 
   $filetime = filemtime($filename);
   $file_mb = round((filesize($filename) / 1048576), 2);
-  $title = str_replace("mp3/", "", $filename );
+  $title = str_replace('mp3/', "", $filename );
   $title = str_replace(".mp3", "", $filename );
   $title = str_replace("_", " ", $title );
   $title = str_replace("-", " ", $title );
@@ -68,7 +68,7 @@ foreach($files as $filename) {
 '<tr class="song">
   <td class="songname">
     <a onclick="choose(\''.rawurlencode($filename).'\')"
-       title="['.$ThisFileInfo['playtime_string'].']"
+       title="'.$title.' ['.$ThisFileInfo['playtime_string'].']"
     >
     <img src="playbutton.png" alt="Play '.$title.'">
      '.$title.'
