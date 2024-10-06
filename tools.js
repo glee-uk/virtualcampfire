@@ -60,15 +60,15 @@ function debug(str) {
   
   function lyricsUrl(url) { 
     var decoded = decodeURI(url);
-    var plain = new RegExp("^mp3%2F([^\(]+)\.mp3$");
+    var plain = new RegExp("^mp3\%2F([^\(]+)\.mp3$");
     var m = plain.exec(decoded);
     if (m != null) { 
      return "lyrics/" + m[1] + ".html";
     } else { 
-     var withBrackets = new RegExp(/^mp3%2F([^\(]+?)_\(([^\)]+)\)/);
+     var withBrackets = new RegExp(/^mp3\%2F([^\(]+?)_\(([^\)]+)\)/);
      var wb = withBrackets.exec(decoded);
      if (wb != null) { 
-       return wb[1] + ".html";
+       return "lyrics/" + wb[1] + ".html";
      } else { 
        alert(decoded);
        return "foo.txt";
