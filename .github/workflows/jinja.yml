@@ -44,7 +44,7 @@ jobs:
       
         git config --global user.name "TimP Github"
         
-        git commit -m "Github Actions $(date)" -a 
+        git commit -m "Github Action jinja.yml - $(date)" -a
 
     - name: Push generated files
       uses: ad-m/github-push-action@v0.8.0
