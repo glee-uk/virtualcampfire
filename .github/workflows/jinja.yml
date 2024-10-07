@@ -46,7 +46,7 @@ jobs:
   
         git commit -m "Github Actions $(date)" index.html
         
-        git commit -m "Github Actions $(date)" index.html
+        git commit -m "Github Actions $(date)" tim_selection.html
 
 
     - name: Push generated files
