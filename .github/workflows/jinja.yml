@@ -43,8 +43,10 @@ jobs:
         git config --local user.email "timp@paneris.org"
       
         git config --global user.name "TimP Github"
-  
+        
         git commit -m "Github Actions $(date)" index.html
+        
+        git commit -m "Github Actions $(date)" index.txt
         
         git commit -m "Github Actions $(date)" tim_selection.html
 
