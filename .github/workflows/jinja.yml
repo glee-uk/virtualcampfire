@@ -18,7 +18,7 @@ jobs:
     - uses: actions/checkout@v3
 
     - name: List all files
-      run: ls mp3/*.mp3 > index.txt
+      run: cd mp3; ls *.mp3 > ../index.txt
 
     - name: setup python
       uses: actions/setup-python@v2
