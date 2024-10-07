@@ -13,7 +13,7 @@ A copy of http://virtualcampfire.co.uk.
 # Local development
 Checkout, run:
 ```
-python site_jinja.py index.txt
+python jinja_site.py index.txt
 ```
 Then open index.html file in a browser.
 

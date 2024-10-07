@@ -31,10 +31,16 @@ jobs:
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
     - name: execute python script for all
       run: |
-        python site_jinja.py index.txt
-    - name: execute python script for tim_selection
+        python jinja_site.py index.txt
+    - name: execute python script for selection
       run: |
-        python site_jinja.py tim_selection.txt 
+        python jinja_site.py selection.txt
+    - name: execute python script for Songbook_2017
+      run: |
+        python jinja_site.py Songbook_2017.txt
+    - name: execute python script for Songbook_1968
+      run: |
+        python jinja_site.py Songbook_1968.txt 
      
 
     - name: Commit generated files
