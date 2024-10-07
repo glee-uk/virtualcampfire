@@ -38,7 +38,6 @@ with (open(file_in, 'r') as input):
         song["lyric_name"] = lyric_name
         song["lyric_exists"] = os.path.exists(lyric_name)
         title = title.replace("_", " ")
-        print(title)
         song["title"] = title
         path = 'mp3/' + file_name
         song["path"] = path
@@ -46,7 +45,6 @@ with (open(file_in, 'r') as input):
         song["duration"] = str(timedelta(seconds=round(tags.duration)))
         song["size"] = round((tags.filesize / 1048576), 2)
         songs.append(song)
-print(songs)
 
 environment = Environment(loader=FileSystemLoader("."))
 page_template = environment.get_template("jinja_page.template")
