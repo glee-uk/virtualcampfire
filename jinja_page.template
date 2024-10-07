@@ -63,6 +63,11 @@ to learn and teach traditional songs online.
      {{song.title}}
     </a>
   </td>
+  <td>
+    {% if song.version != ""  %}
+    {{song.version}}
+    {% endif %}
+  </td>
   <td valign="center">
   {% if song.lyric_exists  %}
 	<a href="{{song.lyric_name}}" target = "_" title="Lyrics for {{song.title}}">

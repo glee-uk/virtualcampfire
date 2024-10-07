@@ -31,9 +31,15 @@ with (open(file_in, 'r') as input):
     for line in input:
         song = {}
         file_name = line.strip()
-        title = file_name.replace(".mp3", "")
-        title = title.split("(")[0]
+        title_version = file_name.replace(".mp3", "")
+        title = title_version.split("(")[0]
         title = title.strip()
+        if len(title_version.split("(")) == 2:
+            version = title_version.split("(")[1].replace(")", "")
+            song["version"] = version
+        else:
+            song["version"] = ""
+
         lyric_name = "lyrics/" + title + ".html"
         song["lyric_name"] = lyric_name
         song["lyric_exists"] = os.path.exists(lyric_name)
