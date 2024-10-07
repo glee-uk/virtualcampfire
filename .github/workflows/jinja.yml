@@ -1,0 +1,58 @@
+name: Run python jija and commit
+
+on:
+  push:
+    branches: [ "gh-pages" ]
+  pull_request:
+    branches: [ "gh-pages" ]
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: List all files
+      run: ls mp3/*.mp3 > index.txt
+
+    - name: setup python
+      uses: actions/setup-python@v2
+
+      with:
+        python-version: 3.8 #install the python needed
+        - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install Jinja2 tinytag 
+          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+    - name: execute python script for all
+      run: |
+        python site_jinja.py index.txt
+    - name: execute python script for all
+      run: |
+        python site_jinja.py tim_selection.txt 
+     
+
+    - name: Commit generated files
+      run: 
+
+        git config --local user.email "timp@paneris.org"
+      
+        git config --global user.name "TimP Github"
+  
+        git commit -m "Github Actions $(date)" index.html
+        
+        git commit -m "Github Actions $(date)" index.html
+
+
+    - name: Push generated files
+      uses: ad-m/github-push-action@v0.8.0
+      with:
+          branch: gh-pages #ignore if your branch is master
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          force: true

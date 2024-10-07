@@ -1,0 +1,57 @@
+#!/usr/bin/env python
+import sys
+import os
+from jinja2 import Environment, FileSystemLoader
+from datetime import datetime, timedelta
+from tinytag import TinyTag
+'''
+List of possible attributes you can get with TinyTag:
+
+tag.album         # album as string
+tag.albumartist   # album artist as string
+tag.artist        # artist name as string
+tag.audio_offset  # number of bytes before audio data begins
+tag.bitrate       # bitrate in kBits/s
+tag.disc          # disc number
+tag.disc_total    # the total number of discs
+tag.duration      # duration of the song in seconds
+tag.filesize      # file size in bytes
+tag.genre         # genre as string
+tag.samplerate    # samples per second
+tag.title         # title of the song
+tag.track         # track number as string
+tag.track_total   # total number of tracks as string
+tag.year          # year or data as string
+'''
+
+file_in = sys.argv[1]
+file_out = file_in.replace(".txt", ".html")
+songs = []
+with (open(file_in, 'r') as input):
+    for line in input:
+        song = {}
+        file_name = line.strip()
+        title = file_name.replace(".mp3", "")
+        title = title.split("(")[0]
+        title = title.strip()
+        lyric_name = "lyrics/" + title + ".html"
+        song["lyric_name"] = lyric_name
+        song["lyric_exists"] = os.path.exists(lyric_name)
+        title = title.replace("_", " ")
+        print(title)
+        song["title"] = title
+        path = 'mp3/' + file_name
+        song["path"] = path
+        tags = TinyTag.get(path)
+        song["duration"] = str(timedelta(seconds=round(tags.duration)))
+        song["size"] = round((tags.filesize / 1048576), 2)
+        songs.append(song)
+print(songs)
+
+environment = Environment(loader=FileSystemLoader("."))
+page_template = environment.get_template("jinja_page.template")
+
+with open(file_out, mode="w", encoding="utf-8") as output:
+    output.write(page_template.render(songs=songs, dateStamp=datetime.now()))
+    print(f"... wrote {file_out}")
+
