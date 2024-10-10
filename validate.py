@@ -32,7 +32,7 @@ with open('songs.csv', newline='') as csvfile:
         rows[row['FileName']] = row
 
 songs = {}
-with (open("index.txt", 'r') as input):
+with (open("all.txt", 'r') as input):
     for line in input:
         song = {}
         file_name = line.strip()
