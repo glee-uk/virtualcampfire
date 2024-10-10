@@ -42,6 +42,7 @@ with (open(file_in, 'r') as input):
             song["version"] = ""
 
         lyric_name = "lyrics/" + title + ".html"
+        lyric_name = lyric_name.replace("_.html", ".html")
         song["lyric_name"] = lyric_name
         song["lyric_exists"] = os.path.exists(lyric_name)
         title = title.replace("_", " ")
