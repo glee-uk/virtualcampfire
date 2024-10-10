@@ -37,6 +37,15 @@ lyrics/<Song Title>.html
 ```
 All versions of a song have only one lyrics file. This maybe  weakness.
 
+# Song Data
+Apart from the song file name and some meta data in the mp3 files themselves we have a Google sheet 
+This can be downloaded using this url
+https://docs.google.com/spreadsheets/d/1Beh2H4Hxyz5OTgBWB4afx0h_gpxcHu785-k6Gbtc0lI/gviz/tq?tqx=out:csv&sheet=Songs
+and saved as songs.csv
+
+
+
+
 # To Do
 - Create song book content files for each song book
 - Add lyrics for every song
