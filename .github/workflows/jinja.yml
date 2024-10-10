@@ -18,7 +18,7 @@ jobs:
     - uses: actions/checkout@v3
 
     - name: List all files
-      run: cd mp3; ls *.mp3 > ../index.txt
+      run: cd mp3; ls *.mp3 > ../all.txt
 
     - name: setup python
       uses: actions/setup-python@v2
@@ -31,13 +31,16 @@ jobs:
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
     - name: execute python script for all
       run: |
-        python jinja_site.py index.txt
+        python jinja_site.py all.txt
     - name: execute python script for selection
       run: |
         python jinja_site.py selection.txt
     - name: execute python script for Songbook_2017
       run: |
         python jinja_site.py Songbook_2017.txt
+    - name: Make Songbook_2017 the default
+      run: |
+        cp Songbook_2017.html index.html
     - name: execute python script for Songbook_1968
       run: |
         python jinja_site.py Songbook_1968.txt 
