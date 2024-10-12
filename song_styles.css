@@ -13,43 +13,43 @@ body {
 }
 a:active, a:link, a:visited {
     color: #E5FFB2;
-
     border: 0px;
-    padding: 2px;
 }
 a:hover {
     color: #E5FFB2;
     border: 0px;
-    text-decoration: none;
-    padding: 2px;
 }
-th {
-    text-align:left;
-    border-bottom:1px solid green;
-}
-
-.songname {
-    margin: 5px;
-    color: #FFFFFF; 
+#songlist {
+	margin:auto;
+	width:86%;
 }
 #songlist td {
     padding: 4px;
     border-bottom:1px dotted green;
 }
+
 #songlist .song {
     border-bottom:1px solid #00CC00;
     border-left:none;
     list-style:none;
+    padding: 2px;
+    margin: 2px;
+    color: #FFFFFF;
+    margin:auto;
+
 }
 .song a:link {
     text-decoration:none;
 }
-
-
 #songlist {
     border:2px inset green;
     margin:auto;
     padding:2px;
     width:80%;
+}
+
+
+.song_text a:hover {
+    background-color: #00CC00;
 }
 
