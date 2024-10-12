@@ -7,10 +7,13 @@ import os
 
 rows = {}
 with open('songs.csv', newline='') as csvfile:
-    with open("Songbook_2017.txt", 'w') as output:
-        reader = csv.DictReader(csvfile)
-        for row in reader:
-            if row['2017 Songbook'] == "Y" and row['VC Choice'] == "Y":
-                output.write(row['FileName'] + "\n")
-                print(row['FileName'])
+    o2017 = open("Songbook_2017.txt", 'w')
+    o2012 = open("Songbook_2012.txt", 'w')
+    reader = csv.DictReader(csvfile)
+    for row in reader:
+        print(row['FileName'])
+        if row['2017 Songbook'] == "Y" and row['VC Choice'] == "Y":
+            o2017.write(row['FileName'] + "\n")
+        if row['2012 Songbook'] == "Y" and row['VC Choice'] == "Y":
+            o2012.write(row['FileName'] + "\n")
 

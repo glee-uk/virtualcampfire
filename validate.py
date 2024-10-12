@@ -32,10 +32,14 @@ with open('songs.csv', newline='') as csvfile:
         rows[row['FileName']] = row
 
 songs = {}
-with (open("all.txt", 'r') as input):
-    for line in input:
+
+# assign directory
+directory = 'mp3'
+
+# iterate over files in
+# that directory
+for file_name in os.listdir(directory):
         song = {}
-        file_name = line.strip()
         song["file_name"] = file_name
         title_version = file_name.replace(".mp3", "")
         title = title_version.split("(")[0]
@@ -65,7 +69,7 @@ for row in rows:
 # Check the files
 for song in songs:
     if (not song in rows):
-        print(f'"{song}","Y",,"Fine","Y","From OGVCC"')
+        print(f'{song},N,Y,,Fine,Y,"From OGVCC"')
 
 
 #print(songs)
