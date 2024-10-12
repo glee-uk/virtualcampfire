@@ -35,7 +35,9 @@ This is parsed to get the lyric file name.
 ```
 lyrics/<Song Title>.html
 ```
-All versions of a song have only one lyrics file. This maybe  weakness.
+All versions of a song have only one lyrics file. This maybe a weakness.
+lyrics/Example.html is the template. 
+
 
 # Song Data
 Apart from the song file name and some meta data in the mp3 files themselves we have a Google sheet 
