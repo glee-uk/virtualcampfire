@@ -38,13 +38,17 @@ jobs:
     - name: execute python script for Songbook_2017
       run: |
         python jinja_site.py Songbook_2017.txt
-    - name: Make Songbook_2017 the default
+    - name: execute python script for Songbook_2012
       run: |
-        cp Songbook_2017.html index.html
+        python jinja_site.py Songbook_2012.txt
     - name: execute python script for Songbook_1968
       run: |
         python jinja_site.py Songbook_1968.txt 
-     
+
+    - name: Make Songbook_2017 the default
+      run: |
+        cp Songbook_2017.html index.html
+
 
     - name: Commit generated files
       run: 
