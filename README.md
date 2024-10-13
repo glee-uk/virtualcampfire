@@ -46,7 +46,21 @@ https://docs.google.com/spreadsheets/d/1Beh2H4Hxyz5OTgBWB4afx0h_gpxcHu785-k6Gbtc
 and saved as songs.csv
 
 
+# Song  Ingestion Process
 
+1. Look at ingestion Sheet to find when and where recorded
+2. Download from email in correct name format (regarless of mp3/mp4)
+3. If mp4 convert to mp3 at https://www.freeconvert.com/mp3-to-mp4/
+4. Copy lyrics/Example.html to lyrics/<Song Title>.html
+5. Update lyrics/<Song Title>.html with the lyrics from the PDF of the 2017 songbook
+6. git add mp3/<Song Title>.mp3 lyrics/<Song Title>.html
+7. python validate.py
+8. Copy output to the right place in songs.csv
+9. python make_songbooks_from_songs.py
+10. git commit -m "Added <Song Title>"
+11. git pull origin gh-pages
+12. git push origin gh-pages
+13. tag incoming email with fsc/vc34
 
 # To Do
 - Create song book content files for each song book
