@@ -11,7 +11,7 @@ with open('songs.csv', newline='') as csvfile:
     o2012 = open("Songbook_2012.txt", 'w')
     reader = csv.DictReader(csvfile)
     for row in reader:
-        print(row['FileName'])
+#        print(row['FileName'])
         if row['2017 Songbook'] == "Y" and row['VC Choice'] == "Y":
             o2017.write(row['FileName'] + "\n")
         if row['2012 Songbook'] == "Y" and row['VC Choice'] == "Y":
