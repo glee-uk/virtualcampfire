@@ -52,6 +52,7 @@ Blowin_In_The_Wind.mp3
 Blue_Lake_And_Rocky_Shore.mp3
 Blustery_Fireside_(Pipes).mp3
 Boggy_Boggy.mp3
+Bold_Riley_(Clem-2024-10).mp3
 Bold_Riley_(Oxford_Glee_2024-02-11).mp3
 Bon_Soir_(01).mp3
 Bon_Soir_(02).mp3
@@ -178,6 +179,7 @@ Heavenly_Aeroplane.mp3
 Hesitation_Blues.mp3
 Hey_Ho_Anybody_Home.mp3
 Hill_And_Gully_Rider.mp3
+Home_Boys,_Home_(Clem_2024-10).mp3
 Home_Boys_Home_(Bridges_Dec23).mp3
 Home_To_The_Motherland.mp3
 House_Of_The_Rising_Sun.mp3
@@ -362,7 +364,9 @@ Roll_The_Old_Chariot_Along_(Putney_Allstars).mp3
 Rolling_In_The_Dew_Makes_The_Milkmaids_Fair.mp3
 Rolling_On_The_Grass.mp3
 Rose_Of_Aberdeen.mp3
+Rose_Rose_(Clem_2024-10).mp3
 Rosemary_Lane.mp3
+Rosemary_Lane_(Clem_2024-10).mp3
 Rosemary_Lane_(Wagon_Band).mp3
 Rove_Riley_Rove_(Barnyard).mp3
 Rove_Riley_Rove_(Plus_Extras).mp3
