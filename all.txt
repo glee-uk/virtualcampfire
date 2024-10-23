@@ -403,7 +403,7 @@ Sikelele_Africa.mp3
 Silver_Dagger_(01).mp3
 Silver_Dagger_(Jaunty_Ukelele).mp3
 Sin_Song.mp3
-Sing_If_Your_Glad_To_Be_Gay_(Glee_Camp_2024-10).mp3
+Sing_If_You're_Glad_To_Be_Gay_(Glee_Camp_2024-10).mp3
 Sing_Together.mp3
 Sinner_Man_(Putney_Allstars).mp3
 Sixteen_Tons.mp3
@@ -507,7 +507,7 @@ We_Are_At_One_With_The_Infinite_Sun_(Rain_Soaked_Hippies).mp3
 Wedding_Song.mp3
 Went_Down_To_The_River_To_Pray.mp3
 What_Will_We_Do_(Pam_and_Bea).mp3
-When_Im_Gone_(Glee_Camp_2024-10).mp3
+When_I'm_Gone_(Glee_Camp_2024-10).mp3
 When_You_Were_Born_You_Cried_(Hodore_2024_07).mp3
 Whisky.mp3
 Whisky_On_A_Sunday_(FFS).mp3
