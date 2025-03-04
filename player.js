@@ -65,14 +65,17 @@ function uncheck(url) {
 }
 function updatePlaylist() {
     var playlistIds = '';
-    if (player.src != null && player.src != '') {
-      // alert('player.src: ' + player.src);
+    if (player.src != null && player.src != '' && player.src != 'undefined') {
 	  playlistIds = idFromUrl(player.src) + ',';
-      // alert('playlistIds: ' + playlistIds);
 	}
 	playlistIds += playlist.map(idFromUrl).join(',');
-	// alert('playlistIds: ' + playlistIds);
+	if (playlistIds.endsWith(',')) {
+	  playlistIds = playlistIds.substring(0, playlistIds.length - 1);
+	}
     currentHref.searchParams.set('playlist', playlistIds);
+    if (currentHref.searchParams.get('playlist') == '') {
+	  currentHref.searchParams.delete('playlist');
+	}
     window.history.pushState({}, '', currentHref);
 }
 function choose(url,add) {
@@ -97,7 +100,7 @@ function choose(url,add) {
         play(next_url);
       } else {
         player.pause();
-        player.src = '';
+        player.removeAttribute('src');
       }
 	}
     updatePlaylist();
