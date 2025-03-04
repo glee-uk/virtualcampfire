@@ -66,12 +66,12 @@ function uncheck(url) {
 function updatePlaylist() {
     var playlistIds = '';
     if (player.src != null && player.src != '') {
-    alert('player.src: ' + player.src);
+      // alert('player.src: ' + player.src);
 	  playlistIds = idFromUrl(player.src) + ',';
-      alert('playlistIds: ' + playlistIds);
+      // alert('playlistIds: ' + playlistIds);
 	}
 	playlistIds += playlist.map(idFromUrl).join(',');
-	alert('playlistIds: ' + playlistIds);
+	// alert('playlistIds: ' + playlistIds);
     currentHref.searchParams.set('playlist', playlistIds);
     window.history.pushState({}, '', currentHref);
 }
