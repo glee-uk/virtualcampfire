@@ -19,10 +19,13 @@ function idFromUrl(url) {
 }
 function loadFromQueryString() {
   const params = new URLSearchParams(window.location.search);
-  if (!params.has('playlist')) {
-	return;
+  var playlistIds;
+  if (params.has('playlist')) {
+    playlistIds = params.get('playlist').split(',');
+  } else {
+    var checkboxes = document.getElementsByName('choose');
+    playlistIds = [checkboxes[0].id];
   }
-  playlistIds = params.get('playlist').split(',');
   first = 0;
   for (i=0; i<playlistIds.length; i++)  {
     id=playlistIds[i];
@@ -36,6 +39,7 @@ function loadFromQueryString() {
       playlist.push(checkbox.value);
     }
   }
+  updatePlaylist();
 }
 function initPlayer(){
   player = document.getElementById('player');
@@ -63,6 +67,7 @@ function uncheck(url) {
     checkbox.checked = false;
     checkbox.style.accentColor = null;
 }
+
 function updatePlaylist() {
     var playlistIds = '';
     if (player.src != null && player.src != '' && player.src != 'undefined') {
@@ -84,7 +89,7 @@ function choose(url,add) {
     playlist.push(url);
     updatePlaylist();
 
-    if (player.paused) {
+    if (player.paused && player.src == '') {
       next_url = playlist.shift()
   	  play(next_url);
     }
