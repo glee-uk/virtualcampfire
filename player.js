@@ -24,7 +24,8 @@ function loadFromQueryString() {
     playlistIds = params.get('playlist').split(',');
   } else {
     var checkboxes = document.getElementsByName('choose');
-    playlistIds = [checkboxes[0].id];
+    checkboxId = checkboxes[0].id;
+    playlistIds = [checkboxId];
   }
   first = 0;
   for (i=0; i<playlistIds.length; i++)  {
@@ -33,7 +34,7 @@ function loadFromQueryString() {
     checkbox.checked = true;
     if (first == 0) {
       first = 1;
-      player.src=checkbox.value;
+      player.src=unescape(checkbox.value);
       checkbox.style.accentColor = 'orange';
     } else {
       playlist.push(checkbox.value);
@@ -68,12 +69,16 @@ function uncheck(url) {
     checkbox.style.accentColor = null;
 }
 
+function unescape(url) {
+  return url.replace("\\'","'");
+}
 function updatePlaylist() {
     var playlistIds = '';
     if (player.src != null && player.src != '' && player.src != 'undefined') {
 	  playlistIds = idFromUrl(player.src) + ',';
 	}
 	playlistIds += playlist.map(idFromUrl).join(',');
+
 	if (playlistIds.endsWith(',')) {
 	  playlistIds = playlistIds.substring(0, playlistIds.length - 1);
 	}
