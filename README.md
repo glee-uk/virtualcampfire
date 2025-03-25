@@ -57,7 +57,7 @@ This maybe a weakness.
 
 
 # Song Data
-Apart from the song file name and some meta data in the mp3 files themselves we have a Google sheet 
+Apart from the song file name and some meta data in the mp3 files themselves we have a Google sheet. 
 This can be downloaded using this url
 https://docs.google.com/spreadsheets/d/1Beh2H4Hxyz5OTgBWB4afx0h_gpxcHu785-k6Gbtc0lI/gviz/tq?tqx=out:csv&sheet=Songs
 and saved as songs.csv
@@ -68,7 +68,7 @@ and saved as songs.csv
 1. Ideally you know when and where recorded
 2. Download from email/whatsapp using the naming convention (regardless of mp3/mp4)
 3. If mp4 convert to mp3 at https://www.freeconvert.com/mp3-to-mp4/
-4. Copy and existing lyric to lyrics/<Song Title>.html
+4. Copy an existing lyric to lyrics/<Song Title>.html
 5. Update lyrics/<Song Title>.html with the lyrics from a PDF of the songbook or from the web
 6. git add mp3/<Song Title>.mp3 lyrics/<Song Title>.html
 7. python validate.py
@@ -80,9 +80,11 @@ and saved as songs.csv
 13. tag incoming email with fsc/vc24
 
 # To Do
-- Create song book content files for each song book
 - ~~Add lyrics for every song~~
 - ~~Regenerate lyrics files giving all recordings of that song~~
+- ~~Enable playlist~~
+- ~~Capability to regenarate lyrics as needed~~
+- Create song book content files for each song book
 - Add MP3 tags to all MP3 files
 - Export to bandcamp
 - Export to funkwhale
