@@ -17,15 +17,17 @@ function idFromUrl(url) {
   var parts = url.split('/');
   return  parts[parts.length - 1].replaceAll("'", "").replaceAll(".mp3", "").replaceAll("(", "").replaceAll(")", "")
 }
-function loadFromQueryString() {
+function loadFromQueryString(pageType) {
   const params = new URLSearchParams(window.location.search);
   var playlistIds;
   if (params.has('playlist')) {
     playlistIds = params.get('playlist').split(',');
   } else {
+    if (pageType == 'song') {
     var checkboxes = document.getElementsByName('choose');
     checkboxId = checkboxes[0].id;
     playlistIds = [checkboxId];
+    }
   }
   first = 0;
   for (i=0; i<playlistIds.length; i++)  {
@@ -42,7 +44,7 @@ function loadFromQueryString() {
   }
   updatePlaylist();
 }
-function initPlayer(){
+function initPlayer(pageType){
   player = document.getElementById('player');
   player.addEventListener('ended', function() {
     debug('ended: ' + player.src
@@ -59,7 +61,7 @@ function initPlayer(){
       play(player.src);
     }
   });
-  loadFromQueryString();
+  loadFromQueryString(pageType);
 }
 
 function uncheck(url) {
@@ -88,6 +90,7 @@ function updatePlaylist() {
 	}
     window.history.pushState({}, '', currentHref);
 }
+
 function choose(url,add) {
   if (add) {
     debug("Adding to playlist: " + url);
