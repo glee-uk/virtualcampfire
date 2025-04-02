@@ -50,9 +50,9 @@ jobs:
     - name: execute python script for IFASCO
       run: |
         python jinja_site.py IFASCO-2025.txt
-    - name: execute python script for The_Next_To_Come_In_1990
+    - name: execute python script for The_Next_To_Come_In_1992
       run: |
-        python jinja_site.py The_Next_To_Come_In_1990.txt
+        python jinja_site.py The_Next_To_Come_In_1992.txt
     - name: execute python script for Arise
       run: |
         python jinja_site.py Arise.txt
