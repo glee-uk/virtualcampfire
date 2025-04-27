@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
  </head>
 <body onload="initPlayer('recording_list')">
-<div id="banner" style="border:0px solid cyan; background-color:#004400;">
+<div id="banner" style="border:0px solid cyan; background-color:#004400;display:block;">
 <table width="100%">
 <tr><td width="20%">
  <div id="left" style='float:left; width:20%; textalign:left;'>
