@@ -79,6 +79,13 @@ and saved as songs.csv
 12. git push origin gh-pages
 13. tag incoming email with fsc/vc24
 
+# Site generation 
+
+The site is generated using the script `jinja_site.py` 
+- `./jinja_site.py selection.txt` create a list page with the songs in selection.txt
+- `./jinja_site.py lyrics/Joe_Hill.html` regenerate the song page for Joe Hill
+- `./jinja_site.py lyrics/` regenerate all song pages in the lyrics directory
+
 # To Do
 - ~~Add lyrics for every song~~
 - ~~Regenerate lyrics files giving all recordings of that song~~
