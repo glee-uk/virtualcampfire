@@ -74,6 +74,7 @@ for song in songs:
        done_lyric_counts[s_dict['lyric_name']]=1
     else:
        todo_lyric_counts[s_dict['lyric_name']]=1
+       print(f"Song {song} has no lyric file: {s_dict['lyric_name']}")
 
     problem = False
     if (not song in rows):
